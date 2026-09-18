@@ -1,0 +1,365 @@
+[
+ {
+  "type": "heading",
+  "level": 3,
+  "text": "3.3 Information Representation / Analysis"
+ },
+ {
+  "type": "para",
+  "text": "Once information has been gathered , it needs to be organized and presented in a way that is easy to understand . Charts and graphs are especially useful for this, because they can show patterns and proportions at a glance ,in a way that would be much harder to see from plain text alone . This section presents the results of the review-based content analysis described above ,using charts built from the patterns found across collected customer reviews."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "3.3.1 Charts and Graphs"
+ },
+ {
+  "type": "para",
+  "text": "Figure 3.1: Distribution of complaint categories found across the customer reviews studied for this report"
+ },
+ {
+  "type": "para",
+  "text": "As Figure 3.1 shows, delivery-related issues make up the largest single share of complaints found in the reviews studied, followed closely by refund and return delays. Product authenticity and quality concerns form the next largest group, followed by customer support issues and, lastly, account-security related complaints. This pattern lines up closely with the five problems identified in Chapter 1, and confirms that these are not rare, one-off complaints, but issues that appear repeatedly across many different customers and review platforms."
+ },
+ {
+  "type": "para",
+  "text": "Figure 3.2: Approximate pattern of star ratings seen on independent review platforms for Daraz Bangladesh."
+ },
+ {
+  "type": "para",
+  "text": "Figure 3.2 shows an approximate pattern commonly seen on independent review platforms, where a large share of reviewers leave a very low, one-star rating, alongside a smaller but steady group of very satisfied, five-star reviewers. This kind of pattern is fairly common for large e-commerce platforms, since customers who had a smooth, ordinary experience are less likely to leave any review at all, while customers who had a serious problem are more likely to make the effort to write one. This means the star-rating pattern should be read as a picture of where problems tend to cluster, rather than as an exact measure of overall customer satisfaction."
+ },
+ {
+  "type": "para",
+  "text": "Figure 3.3: Commonly reported mix of payment methods used for online orders in Bangladesh"
+ },
+ {
+  "type": "para",
+  "text": "Figure 3.3 shows that Cash on Delivery remains the most commonly used payment method for online orders in Bangladesh by a wide margin, with mobile financial services such as bKash and Nagad forming the second largest group, and card or online-banking payments making up the smallest share. This pattern is an important context for the refund-process problem discussed earlier, since a return on a Cash on Delivery order means refunding real cash rather than simply reversing a digital transaction, which can make the refund process feel slower and more stressful for the customer."
+ },
+ {
+  "type": "para",
+  "text": "Figure 3.4: Commonly reported delivery time ranges mentioned in customer reviews."
+ },
+ {
+  "type": "para",
+  "text": "Figure 3.4 groups delivery-time mentions found in the reviews into simple ranges. A little over two-thirds of mentions fall within a one-to-four-day range, which lines up with Daraz's publicly reported progress in shrinking delivery times over the past several years. Still, a noticeable share of mentions, around one in three, describe deliveries taking five days or longer, and it is this slower group that tends to overlap most closely with the delivery complaints discussed in Chapter 1 and Chapter 2, including disputed \"failed delivery\" statuses."
+ },
+ {
+  "type": "heading",
+  "level": 2,
+  "text": "3.3.1.1 Reading These Charts Together"
+ },
+ {
+  "type": "para",
+  "text": "Looking at all three charts side by side tells a more complete story than any single chart on its own. Because Cash on Delivery is used for the large majority of orders (Figure 3.3),and because refund and return delays are the largest complaint category (Figure 3.1),it is reasonable to conclude that Cash on Delivery orders are disproportionately affected by the refund problems described in chapter 1 and chapter 2. Similarly, the heavy skew toward one-star reviews in Figure 3.2 does not mean most customers are unhappy overall;rather,it shows that unhappy customers are far more motivated to leave a review than satisfied ones,which is an important detail to keep in mind when interpreting any public review data ,including the analysis in this report."
+ },
+ {
+  "type": "heading",
+  "level": 1,
+  "text": "3.3.2 DFD of Existing System"
+ },
+ {
+  "type": "para",
+  "text": "A Data Flow Diagram, or DFD,Is sometimes called a “bubble chart”. It is used to show how data moves through a system,how that data is transformed at each step along the way .A DFD does not show every small technical detail of a system; it focuses on the main processes, the data stores they use, and the outside entities they connect to,such as customers,sellers, and delivery partners."
+ },
+ {
+  "type": "para",
+  "text": "The diagram below shows the existing order-to-delivery workflow of Daraz Bangladesh, based on the order process observed and described in Section 3.2. . It begins when a customer searches for and selects a product, and ends with the order being delivered, with a separate path shown for return and refund requests."
+ },
+ {
+  "type": "para",
+  "text": "Figure 3.5: Data Flow Diagram (DFD) of the existing Daraz Bangladesh order and delivery system"
+ },
+ {
+  "type": "para",
+  "text": "The process begins with the Customer entity sending a search request to Process 1.0, Browse and Search Products, which pulls information from the Product Catalog File. Once a product is selected, Process 2.0, Add to Cart and Edit Order, uses information from the Customer Account File to prepare the order. The order then moves to Process 3.0, Checkout and Select Payment, where the customer chooses between Cash on Delivery, a mobile financial service, or a card payment."
+ },
+ {
+  "type": "para",
+  "text": "Process 4.0, Process Payment, records the transaction in the Payment and Transaction File and passes the confirmed payment to Process 5.0, Confirm Order, where the Seller entity accepts the order. This step saves the order details into the Order Info File. Next, Process 6.0, Pack and Handover to Courier, uses stock information from the Warehouse or Seller Stock entity to prepare the parcel, which is then handed to the Courier or Delivery Partner entity."
+ },
+ {
+  "type": "para",
+  "text": "Process 7.0, Deliver Order, updates the Delivery Status File once the product reaches the customer. A separate path, Process 8.0, Return and Refund Request, allows the customer to start a return at any point after delivery, which updates the Order Info File and eventually leads to a refund or another resolution being sent back to the customer. This diagram makes it easier to see exactly where in the process each of the five problems identified in Chapter 1 tends to occur. Product authenticity issues trace back to the Product Catalog File and Process 5.0, since this is where seller and product information first enters the system. . Refund delays connect to the weak feedback loop around Process 8.0. Account security issues relate to Process 4.0 and the Customer Account File. Delivery problems cluster around Process 6.0 and 7.0. Customer support issues cut across the whole diagram, since support staff need accurate information from every file shown here to help a customer properly."
+ },
+ {
+  "type": "heading",
+  "level": 1,
+  "text": "3.4 Cost-Benefit Analysis"
+ },
+ {
+  "type": "para",
+  "text": "A cost-benefit analysis compares the total cost of building and running a proposed improvement against the total benefit or saving it is expected to bring. This helps decide whether a proposed change is financially worth doing. For Daraz Bangladesh, the proposed improvements from Chapter 2 mainly involve adding new checks, tracking tools, and communication features on top of the existing system, rather than replacing the whole platform, which keeps the overall cost more manageable."
+ },
+ {
+  "type": "heading",
+  "level": 2,
+  "text": "3.4.1 Estimated Cost of Proposed Improvements"
+ },
+ {
+  "type": "para",
+  "text": "Before looking at specific figures, it helps to separate costs into a few simple categories. Tangible costs are the ones that are easy to measure directly, such as paying developers to build a new feature or paying for extra server capacity.Intangible costs are harder to put an exact number on, such as the short-term inconvenience customers might feel while a new verification step is being rolled out.Similarly, some costs are fixed, meaning they do not change much with the number of orders, such as the one-time cost of building a fraud-detection tool, while other costs are variable, meaning they grow with usage, such as the cost of sending extra SMS verification messages as more customers use the platform."
+ },
+ {
+  "type": "para",
+  "text": "The table below gives a simple, estimated breakdown of the type of costs involved in building the improvements recommended in Chapter 2, such as stronger seller verification, better return tracking, extra account-security steps, improved delivery-proof tools, and better support routing. These figures are illustrative estimates used for planning purposes, based on typical costs for this type of feature work."
+ },
+ {
+  "type": "table",
+  "rows": [
+   [
+    "Cost Type",
+    "Item",
+    "Estimated Cost (USD)"
+   ],
+   [
+    "Technology / Development Cost",
+    "Seller verification and rating system",
+    "$12,000"
+   ],
+   [
+    "Fraud detection and login-security upgrade",
+    "$15,000"
+   ],
+   [
+    "Return and refund status tracking tool",
+    "$6,000"
+   ],
+   [
+    "Delivery proof-of-attempt feature",
+    "$4,500"
+   ],
+   [
+    "Personnel Cost",
+    "Additional support staff and training",
+    "$9,000"
+   ],
+   [
+    "Operating Cost",
+    "Awareness campaigns on fraud and fake pages",
+    "$3,500"
+   ],
+   [
+    "Total Estimated Cost",
+    "",
+    "$50,000"
+   ]
+  ]
+ },
+ {
+  "type": "para",
+  "text": "Table 3.2: Estimated cost breakdown for the proposed system improvements."
+ },
+ {
+  "type": "heading",
+  "level": 1,
+  "text": "3.4.2 Break-Even Point Analysis"
+ },
+ {
+  "type": "para",
+  "text": "The break-even point is the point at which the total benefit gained from a change becomes equal to its total cost, meaning the project neither gains nor loses money at that point. Any activity beyond the break-even point can be considered a net gain. For this analysis, we treat each successfully completed order that avoids a costly problem, such as a fraud case, a bad refund experience, or a failed delivery, as one \"unit\" of benefit, worth an estimated $13 in saved cost and retained customer value, against an estimated variable cost of $9.5 per unit to maintain the new checks and features."
+ },
+ {
+  "type": "para",
+  "text": "Using a fixed cost of $40,000 and the per-unit numbers above, the break-even point can be calculated using the standard formula:"
+ },
+ {
+  "type": "para",
+  "text": "Break-Even Point (in units) = Fixed Cost ÷ (Price per unit − Variable Cost per unit) = 40,000 ÷ (13 − 9.5) = 40,000 ÷ 3.5 ≈ 11,429 units."
+ },
+ {
+  "type": "para",
+  "text": "Figure 3.6: Break-even analysis for the proposed system improvements."
+ },
+ {
+  "type": "para",
+  "text": "This means that once the improved system successfully handles around 11,429 problem-avoiding order interactions, such as catching a fake product before it ships, resolving a refund quickly, or preventing a fraudulent login, the cost of building and running the new features will have paid for itself. Given that Daraz Bangladesh handles a very large number of orders every day, reaching this break-even point is realistic within a fairly short time after launch, which supports the economic feasibility conclusion already reached in Chapter 2."
+ },
+ {
+  "type": "heading",
+  "level": 3,
+  "text": "3.5 Detailed Feasibility Analysis"
+ },
+ {
+  "type": "heading",
+  "level": 2,
+  "text": "3.5.1 Root Cause Analysis of Identified Challenges"
+ },
+ {
+  "type": "para",
+  "text": "This section looks one level deeper into each of the five problems identified earlier in this report, to understand not just what is going wrong, but why it happens, and what effect it has on both the system's performance and the way customers behave."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "1. Product Authenticity and Quality Control"
+ },
+ {
+  "type": "para",
+  "text": "Root Cause: Daraz's marketplace model relies on thousands of independent sellers, and the process for checking a seller's identity and product quality before they are allowed to sell is not strict enough to catch every case of a fake or low-quality product."
+ },
+ {
+  "type": "para",
+  "text": "Performance Impact: Fake or low-quality products lead to more returns, more refund requests, and more customer-support tickets, which adds extra workload across the whole system."
+ },
+ {
+  "type": "para",
+  "text": "Behavioral Impact: Customers who receive a bad product become more cautious, often avoiding certain categories or sellers entirely, and are more likely to share their bad experience publicly, which can discourage new customers from trusting the platform"
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "2. Refund and Return Process"
+ },
+ {
+  "type": "para",
+  "text": "Root Cause: The return and refund process does not give customers clear, trackable status updates, and does not always explain why a request was rejected or cancelled."
+ },
+ {
+  "type": "para",
+  "text": "Performance Impact: Unclear refund status leads to a higher number of repeated customer-support contacts, since customers reach out again and again to check on the same request."
+ },
+ {
+  "type": "para",
+  "text": "Behavioral Impact: Customers who feel unsure about getting their money back become hesitant to buy higher-priced items, and may reduce how often they use Cash on Delivery, even though it is normally their preferred payment method."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "3. Account Security and Fraud"
+ },
+ {
+  "type": "para",
+  "text": "Root Cause: The current system does not have strong enough tools to detect unusual account activity early, and there is no simple, fast way for customers to freeze their account the moment they suspect a problem."
+ },
+ {
+  "type": "para",
+  "text": "Performance Impact: Successful account hacking or fraud cases require manual investigation and customer-support time to resolve, and in some cases cannot be fully reversed, such as a gift card that has already been claimed. Behavioral Impact: Customers who hear about hacking or fake-website cases,even if it did not happen to them personally, may become more cautious about saving payment details or trusting promotional links related to Daraz."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "4. Delivery Service"
+ },
+ {
+  "type": "para",
+  "text": "Root Cause: Once a parcel is handed over to a courier partner, Daraz's visibility into the exact reason for a delivery delay or failed attempt becomes limited, and there is no simple way for a customer to challenge or clarify a delivery status they disagree with"
+ },
+ {
+  "type": "para",
+  "text": "Performance Impact: Delivery delays and disputed \"failed delivery\" statuses lead to more re-delivery attempts, more customer-support contacts, and in some cases, cancelled orders that need to be reversed."
+ },
+ {
+  "type": "para",
+  "text": "Performance Impact: Delivery delays and disputed \"failed delivery\" statuses lead to more re-delivery attempts, more customer-support contacts, and in some cases, cancelled orders that need to be reversed."
+ },
+ {
+  "type": "para",
+  "text": "Behavioral Impact: Customers who experience a delivery problem may reduce trust in the delivery time estimates shown at checkout, and may become less willing to order time-sensitive items."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "5. Customer Support and Seller Communication"
+ },
+ {
+  "type": "para",
+  "text": "Root Cause: Customer support relies heavily on an automated chatbot for the first stage of contact, and there is no strict rule requiring a chat to stay open until the customer's issue is actually resolved. Seller communication speed is also not closely tracked or enforced."
+ },
+ {
+  "type": "para",
+  "text": "Performance Impact: Support conversations that end without solving the real issue often lead to the customer contacting support again, effectively duplicating the same work."
+ },
+ {
+  "type": "para",
+  "text": "Behavioral Impact: Customers who feel unheard by support are more likely to leave a negative public review, even if the original problem, such as a late delivery, was relatively minor and could have been resolved quickly with better communication."
+ },
+ {
+  "type": "heading",
+  "level": 2,
+  "text": "3.5.2 Root Cause Summary Table"
+ },
+ {
+  "type": "para",
+  "text": "The table below brings together the root cause, performance impact, and behavioral impact for all five problems in one place, for a quick side-by-side comparison."
+ },
+ {
+  "type": "table",
+  "rows": [
+   [
+    "Problem",
+    "Root Cause",
+    "Performance Impact",
+    "Behavioral Impact"
+   ],
+   [
+    "Product Authenticity",
+    "Weak seller and product checks before listing",
+    "More returns and support tickets",
+    "Customers avoid certain sellers/categories"
+   ],
+   [
+    "Refund and Return",
+    "No clear, trackable refund status",
+    "Repeated support contacts for same request",
+    "Hesitation toward higher-priced orders"
+   ],
+   [
+    "Account Security",
+    "Weak early fraud detection and account freeze options",
+    "Manual investigation needed per case",
+    "Caution around saved payment details"
+   ],
+   [
+    "Delivery Service",
+    "Limited visibility once handed to courier",
+    "More re-delivery attempts, cancellations",
+    "Lower trust in delivery time estimates"
+   ],
+   [
+    "Customer Support",
+    "Heavy reliance on chatbot, no closure rule",
+    "Duplicate support contacts",
+    "More negative public reviews"
+   ]
+  ]
+ },
+ {
+  "type": "para",
+  "text": "Table 3.3: Root cause, performance impact, and behavioral impact across all five problems."
+ },
+ {
+  "type": "para",
+  "text": "This side-by-side view makes it clear that most root causes across all five problems point back to the same general gap: the current system is better at handling the ordinary, problem-free order than at handling the exceptions, such as a fake product, a disputed delivery, or a hacked account. This suggests that Daraz Bangladesh's overall business model and technology base are sound, but the \"exception-handling\" layer of the system, meaning the tools and processes that activate once something goes wrong, is where the most valuable improvements can be made."
+ },
+ {
+  "type": "para",
+  "text": "It is worth being clear about the limits of the approach used in this chapter, so that the findings are read with the right amount of confidence. First, the review-based content analysis in Section 3.3 relies on public reviews, which tend to over-represent very unhappy or very happy customers, while customers who had an average, uneventful experience are less likely to leave a review at all.This means the charts in this chapter are useful for spotting where problems cluster, but should not be read as an exact measurement of what percentage of all Daraz customers are satisfied overall."
+ },
+ {
+  "type": "para",
+  "text": "Second, the helpline interview in Section 3.2.3 reflects a single call to a single support agent, so it captures one useful, real data point rather than a broad, statistically representative sample of how every agent handles every situation. Third, direct access to Daraz Bangladesh's senior management and internal operational data was not available for this project, so some of the analysis, particularly around internal costs and root causes, is built on reasonable estimation and publicly available information rather than confirmed internal figures"
+ },
+ {
+  "type": "para",
+  "text": "None of these limitations make the analysis in this chapter less useful. Large, well-known patterns, such as the repeated complaints about delivery, refunds, and account security, show up consistently across many independent sources, which gives good confidence that these are real and recurring issues rather than a one-time coincidence. The limitations simply mean that specific numbers, such as the exact break-even point or the precise percentage of complaints in each category, should be treated as reasonable estimates for planning purposes, not as final, audited figures."
+ },
+ {
+  "type": "heading",
+  "level": 1,
+  "text": "3.6 Conclusion"
+ },
+ {
+  "type": "para",
+  "text": "This chapter has gone through the full information gathering and analysis processes for Daraz Bangladesh’s existing system. Using a review of literature, procedures, and forms, close observation of the platform itself, a real helpline call combined with the company’s own published customer-service materials and a structured content analysis of public reviews, a clear and consistent picture has formed around the five problems first identified in chapter 1."
+ },
+ {
+  "type": "para",
+  "text": "The Data Flow Diagram helped show exactly where in the order-to-delivery process each problem tends to occur , while the cost-benefit and break-even analysis showed that the proposed improvements are realistic to fund and are likely to pay for themselves within a reasonable amount of activity. The root cause analysis then dug one level deeper, showing that most of the problems come from gaps in checking, tracking,and communication, rather than from anything fundamentally broken in Daraz’s overall business model ."
+ },
+ {
+  "type": "para",
+  "text": "With the detailed analysis complete ,the project is ready to move into chapter 4, where a redesigned candidate system will be proposed. This will include an updated Data Flow Diagram showing the improved process, a database design using an Entity-Relationship diagram and sample form designs that directly address the problems and root causes identified throughout this chapter."
+ }
+]

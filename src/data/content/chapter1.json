@@ -1,0 +1,190 @@
+[
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Chapter 1"
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Recognition of Need"
+ },
+ {
+  "type": "heading",
+  "level": 3,
+  "text": "1.1 Introduction"
+ },
+ {
+  "type": "para",
+  "text": "A system is a group of connected parts that work together to reach a common goal. In system analysis and design, we study how an existing system works, find out what problems it has, and then suggest ways to make it better. This process helps a business run more smoothly, serve its customers better, and grow in a stronger way. In this report, we study Daraz Bangladesh, one of the biggest online shopping platforms in the country, to find its main problems and suggest an improved system."
+ },
+ {
+  "type": "para",
+  "text": "Daraz Bangladesh is an online marketplace where people can buy almost anything from one place. This includes electronics, clothes, shoes, groceries, home appliances, beauty products, and many other items. The platform is part of the Daraz Group, which works in several South Asian countries including Bangladesh, Pakistan, Sri Lanka, Nepal, and Myanmar. Daraz Group itself is owned by the Alibaba Group, one of the largest e-commerce companies in the world. Alibaba became the full owner of Daraz Group in 2018, which gave Daraz access to Alibaba's technology, logistics knowledge, and online payment systems."
+ },
+ {
+  "type": "para",
+  "text": "Daraz started its operation in Bangladesh in 2015. Since then, it has grown into the country’s largest online shopping platform. Unlike a normal shop that sells its own products, Daraz mainly works as a marketplace. This means Daraz connects thousands of small and large sellers with millions of buyers across the country. A seller can open a shop on Daraz, list their products, and sell directly to customers. Daraz also runs its own \"LazMall\" style verified-brand section, where big and trusted brands sell their original products, giving customers extra confidence that the item is genuine. Along with the marketplace model, Daraz also manages the full order journey, which includes listing products, accepting orders, collecting payments, arranging delivery, and handling returns or refunds if a customer is not happy with a product."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Mission and Vision"
+ },
+ {
+  "type": "para",
+  "text": "Daraz Bangladesh's stated vision is to become the number one online marketplace in the country by offering good quality products and services to both sellers and customers. Its mission is built around giving customers an enjoyable shopping experience while helping sellers grow their business at the same time. To do this, Daraz says it focuses on building a large and loyal customer base, offering a wide range of products at competitive prices, and providing reliable delivery so that customers keep coming back. For sellers, Daraz aims to provide tools and support that help small businesses reach a much bigger group of buyers than they could reach on their own."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Business Departments and Organizational Structure"
+ },
+ {
+  "type": "para",
+  "text": "Like most large e-commerce companies, Daraz Bangladesh is organized into several major departments that work together to keep the platform running. The main departments include the Seller Center, which supports sellers with onboarding, product listing, and pricing tools; the Customer Relationship Management (CRM) team, which manages communication with buyers and handles complaints; the Supply Chain Management (SCM) team, which manages warehousing, inventory, and delivery planning; the Marketing department, which runs advertising and large sale campaigns; and the Technology or IT department, which builds and maintains the website, mobile app, and backend systems. At the top of the organization sits the Managing Director, who is responsible for the overall direction of Daraz Bangladesh and who also reports to the regional Daraz Group leadership. Below the Managing Director, department heads such as the Chief Operating Officer (COO) and Chief Commercial Officer look after operations and business growth. Under these department heads, category managers, warehouse supervisors, delivery coordinators, and customer support staff carry out the daily work of the company. A simplified view of this structure is shown below."
+ },
+ {
+  "type": "table",
+  "rows": [
+   [
+    "Level",
+    "Roles"
+   ],
+   [
+    "Top / Executive Level",
+    "Managing Director, Chief Operating Officer, Chief Commercial Officer"
+   ],
+   [
+    "Middle / Management Level",
+    "Category Managers, Marketing Managers, Customer Support Managers,"
+   ],
+   [
+    "Operational Level",
+    "Seller Support Staff, Warehouse Staff, Delivery Coordinators, Customer Care Representatives, Riders"
+   ]
+  ]
+ },
+ {
+  "type": "para",
+  "text": "Table 1.1: Simplified organizational structure of Daraz Bangladesh"
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Products, Payment, and Sale Campaigns"
+ },
+ {
+  "type": "para",
+  "text": "Daraz offers more than one way to pay for an order. Customers can pay online using cards, mobile financial services such as bKash or Nagad, or they can choose Cash on Delivery, which means paying the delivery person when the order arrives. Cash on Delivery is very popular in Bangladesh because many customers still do not fully trust online payment or do not have easy access to it. Daraz also runs large sale campaigns during the year, such as \"11.11\" and \"12.12\", where products are sold at a big discount. These campaigns bring in a very large number of orders in a short time, which puts extra pressure on the whole system, from the website to the warehouse to the delivery network."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Logistics and Delivery Network"
+ },
+ {
+  "type": "para",
+  "text": "Delivery is one of the most important parts of Daraz's business, since it is the final step a customer sees before deciding whether they are happy with their shopping experience. In the early years of e-commerce in Bangladesh, delivery used to take a long time, sometimes seven to nine days for a single order. Over the years, Daraz built its own logistics network and also partnered with courier companies such as Paperfly, REDX, and eCourier to speed things up. Because of these changes, average delivery time in many areas has come down to about two to three days. Daraz also uses a central Order Management System (OMS) that helps its operations and customer service teams manage inventory, track orders, handle returns, and coordinate between warehouses, sellers, and delivery partners."
+ },
+ {
+  "type": "para",
+  "text": "Even with all these systems in place, delivering to a whole country is not simple. Bangladesh has crowded cities, difficult traffic, and many remote areas that are harder to reach quickly. Because of this, delivery problems still happen from time to time, even though the overall network has improved a lot compared to the early days of the company."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Market Position"
+ },
+ {
+  "type": "para",
+  "text": "Daraz Bangladesh currently faces very little competition from big international companies like Amazon or eBay, since neither company runs a full local operation in the country. This has helped Daraz remain the market leader for several years, and today it is generally seen as the largest and most well-known online shopping platform in Bangladesh. However, being the market leader does not mean the system is free of problems. Because so many people use the platform every day, even small issues can affect a very large number of customers. Over time, a large number of customers have shared their experiences, both good and bad, on independent review websites, social media pages, and in local newspapers. A careful look at this feedback shows some repeating problems in the way the system works, especially around product quality, refunds, account security, delivery, and customer support."
+ },
+ {
+  "type": "para",
+  "text": "This is exactly why Daraz Bangladesh is a good real-life example for a System Analysis and Design study. It is an active, large, and well-known company. It has a clear and repeatable business process, starting from a customer browsing the app, placing an order, making a payment, and finally receiving the product or asking for a return. Because Daraz is such a big and well-covered company, a large amount of information about it is already available in the public space, such as news articles, company statements, and customer reviews. This makes it possible to study the system closely and suggest real improvements, without needing to visit the company in person."
+ },
+ {
+  "type": "heading",
+  "level": 3,
+  "text": "1.2 Problem Identification"
+ },
+ {
+  "type": "para",
+  "text": "After looking closely at customer reviews from websites such as Trustpilot, SmartCustomer, Google Play Store, and Reviews.io, and also going through local news reports, we found several problems that repeat again and again in the Daraz Bangladesh system. These problems affect how customers feel about the platform, and they also create extra work and cost for the company itself. Identifying these problems clearly is the first and most important step of system analysis, because it is not possible to design a better system without first understanding exactly what is going wrong. Below, we describe five main problems in detail, along with why each one matters and how it affects both customers and the company."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Problem 01: Product Authenticity and Quality Control"
+ },
+ {
+  "type": "para",
+  "text": "A large number of customers have said that the product they received was not the same as what was shown on the Daraz website or app. Sometimes the product is fake, sometimes it is damaged during handling, and sometimes it is simply of a much lower quality than what was expected from the pictures and description shown online. This usually happens because Daraz works with thousands of different sellers, and not every seller is checked carefully before they are allowed to sell on the platform. Because of this, some sellers list wrong pictures, misleading descriptions, or low-quality items just to attract buyers with a low price. In some reported cases, criminals have even created fake pages that look like official Daraz stores to sell counterfeit goods and collect advance payments without ever shipping a real product. This problem does not just affect the one customer who receives a bad product. It also damages the overall reputation of Daraz, because many buyers do not separate the platform from the individual seller in their mind. If they get a fake or low-quality item, they blame Daraz as a whole rather than just that one seller. Over time, repeated cases like this can push customers toward other shopping options, such as buying directly from a shop, or through more informal channels like Facebook groups, even though those channels can carry their own risks."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Problem 02: Refund and Return Process"
+ },
+ {
+  "type": "para",
+  "text": "Many customers have complained that getting a refund from Daraz takes a very long time, or sometimes does not happen at all. In some cases, a customer returns a product, the delivery person collects it, but the customer never receives any paper or message confirming that the return was accepted. Later, the customer finds out that the return request was cancelled, without any clear reason given to them. Other customers report that even when a delivery clearly failed, or a product clearly arrived damaged, their refund request was still rejected, with no easy way to reach someone who could review the decision."
+ },
+ {
+  "type": "para",
+  "text": "This creates a lot of confusion and frustration among customers, because they feel like their money is stuck with no clear or fair way to get it back. Since Cash on Delivery is common in Bangladesh, many customers have already paid real cash for a product before finding out it needs to be returned, which makes a slow refund process feel even more unfair. A slow and unclear refund process also adds extra pressure on the customer support team, since more people call in or message to ask about their pending refunds, which in turn makes support response times even slower for everyone."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Problem 03: Account Security and Fraud"
+ },
+ {
+  "type": "para",
+  "text": "Some customers have reported that their Daraz accounts were accessed without their permission, and this unauthorized access was then used to make purchases they never approved. In one such case, a customer's account was used to buy a Daraz gift card, which was then sent to an email address the customer did not recognize, and Daraz was not able to cancel the order or recover the gift card once it was claimed. Apart from direct account hacking, there have also been separate and well documented cases where criminals created fake Daraz websites and fake Facebook pages that looked almost exactly like the real Daraz brand, and used them to trick people into paying for products that were never sent. On a larger scale, a financial review carried out by a government body in Bangladesh found signs of unusual and suspicious money transactions connected to several e-commerce platforms operating in the country, including Daraz Bangladesh, over a multi-year period. Separately, industry reports have noted that online shopping fraud complaints in Bangladesh have been rising quickly in recent years, with scammers increasingly targeting accounts linked to mobile financial services such as bKash. All of these cases together, from individual account hacking to platform impersonation to wider financial fraud patterns, show that stronger account security, better fraud detection, and clearer steps to stop fake-website scams are needed to protect customers and preserve trust in the platform."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Problem 04: Delivery Service"
+ },
+ {
+  "type": "para",
+  "text": "Delivery delay is one of the most common complaints about Daraz. Many customers say their order took much longer to arrive than the time shown on the app at the moment they placed the order. In some cases, delivery riders mark an order as \"delivery attempt failed\" or say the customer was \"not reachable\", even though the customer says they were actually available and waiting for the product the whole time. This creates a mismatch between what the app says happened and what the customer says actually happened, which is hard for the customer to challenge or correct after the fact."
+ },
+ {
+  "type": "para",
+  "text": "While Daraz has made real progress over the years, cutting average delivery times from around seven to nine days down to about two to three days in many areas by building its own logistics network and partnering with courier companies, delivery problems have not disappeared completely. Bangladesh's crowded city traffic, difficult weather during certain seasons, and harder-to-reach rural areas all continue to create delays from time to time. Because delivery is the last and most visible step of the whole shopping process, any mistake here has a very strong effect on how a customer feels about the entire company, even if every other step, such as browsing, ordering, and payment, went smoothly."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Problem 05: Customer Support and Seller Communication"
+ },
+ {
+  "type": "para",
+  "text": "Several customers have said that it is difficult to reach a real person at Daraz customer support when they have a problem. Many describe getting stuck with an automatic chatbot that gives the same repeated answers without actually solving the issue, forcing them to repeat their problem multiple times. In some cases, the support chat is closed by the company before the customer's problem is even solved, leaving the customer with no clear next step to take."
+ },
+ {
+  "type": "para",
+  "text": "On top of this, communication with individual sellers is often slow, especially when a customer wants to ask about an order change, a missing item, or a delay in shipping. Since Daraz is a marketplace with thousands of independent sellers, the quality of communication can vary a lot from one seller to another, and Daraz itself has limited direct control over how quickly a seller responds. Poor communication at both the platform level and the seller level leaves customers feeling ignored and unheard, especially at the exact moment when something has already gone wrong with their order and they need help the most."
+ },
+ {
+  "type": "heading",
+  "level": 3,
+  "text": "1.3 Conclusion"
+ },
+ {
+  "type": "para",
+  "text": "This chapter has looked closely at Daraz Bangladesh, starting with how the company works, its ownership under the Alibaba-owned Daraz Group, its mission and vision, its organizational structure, its payment and delivery systems, and what makes it such an important and widely used online shopping platform in Bangladesh. It has also pointed out five major problems that affect the day-to-day experience of Daraz customers: issues with fake or low-quality products, a slow and unclear refund process, weaknesses in account security and fraud protection, unreliable delivery service, and poor customer support and seller communication."
+ },
+ {
+  "type": "para",
+  "text": "Each of these problems, on its own, might seem like a small issue. But because Daraz serves such a massive number of customers every single day, even a small percentage of failed orders, delayed refunds, or hacked accounts adds up to a very large number of unhappy customers in total. Left unaddressed, these problems can slowly weaken customer trust and loyalty, even for a company that holds a strong and largely unchallenged position in the Bangladeshi e-commerce market."
+ },
+ {
+  "type": "para",
+  "text": "Finding and clearly writing down these problems is the first and most important step of system analysis. Without knowing exactly what is going wrong, it is not possible to design a better system. The problems identified in this chapter will be studied in more detail in the coming chapters. Chapter 2 will look at the initial feasibility of solving each of these problems, considering technical, economic, operational, schedule, and legal factors. Chapter 3 will go deeper into analysis using information gathering tools, charts, and diagrams, along with a cost-benefit and break-even analysis. Chapter 4 will then present a redesigned system that aims to directly fix the problems described above, helping Daraz Bangladesh serve its customers in a safer, faster, and more trustworthy way."
+ }
+]

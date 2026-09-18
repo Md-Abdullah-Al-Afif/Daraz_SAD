@@ -1,0 +1,522 @@
+[
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Chapter 2"
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Initial Feasibility Study"
+ },
+ {
+  "type": "heading",
+  "level": 3,
+  "text": "2.1 Introduction"
+ },
+ {
+  "type": "para",
+  "text": "Recognizing a need is only the first step in system analysis. Once we know what the problems are, the next step is to check whether it actually makes sense to try and fix them. This step is called Initial Feasibility Study. It is an early check that helps us understand, in a simple way, whether a proposed solution to each problem is realistic, useful, and worth the time and money it would take."
+ },
+ {
+  "type": "para",
+  "text": "In this stage, a system analyst usually works closely with different people connected to the system. This can include end users such as customers, managers, technical staff, and sometimes even the sellers who use the platform. Talking to these people, along with reading reviews, reports, and other public information, helps the analyst understand the real requirements and expectations behind each problem. Both functional needs, meaning what the system should be able to do, and non-functional needs, meaning things like speed, safety, and reliability, are considered at this stage."
+ },
+ {
+  "type": "heading",
+  "level": 3,
+  "text": "2.2 Initial Feasibility Analysis"
+ },
+ {
+  "type": "para",
+  "text": "This checks whether the technology needed to fix the problem already exists, or whether it can be built or bought without too much difficulty. It looks at things like software, hardware, skilled workers, and any technical limits that might make the solution hard to build."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "1.Technical Feasibility:"
+ },
+ {
+  "type": "para",
+  "text": "This checks whether the technology needed to fix the problem already exists, or whether it can be built or bought without too much difficulty. It looks at things like software, hardware, skilled workers, and any technical limits that might make the solution hard to build."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "2.Economic Feasibility:"
+ },
+ {
+  "type": "para",
+  "text": "This is also called cost-benefit analysis. It compares how much money the solution will cost to build and maintain, against how much benefit or saving it will bring. If the benefits are clearly bigger than the costs over time, the solution is considered economically worth doing."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "3.Operational Feasibility:"
+ },
+ {
+  "type": "para",
+  "text": "This checks whether the new solution will actually fit into the way the company already works. It looks at whether staff and users will be able to use the new process easily, and whether it matches the daily operations and goals of the business."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "4.Legal Feasibility:"
+ },
+ {
+  "type": "para",
+  "text": "This checks whether the solution follows all the necessary laws and rules. For an e-commerce company like Daraz, this can include data protection laws, consumer protection rules, and payment or financial regulations set by the government or the central bank."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "5.Schedule Feasibility:"
+ },
+ {
+  "type": "para",
+  "text": "This checks whether the solution can realistically be built and put in place within a reasonable amount of time. It looks at deadlines, how many resources are available, and any risks that could cause delays."
+ },
+ {
+  "type": "para",
+  "text": "Using these five simple checks, we now look at each of the five problems identified in Chapter 1. For every problem, we state the problem again in short, summarize what we found, explain the findings in more detail, and finally give a clear recommendation."
+ },
+ {
+  "type": "para",
+  "text": "The following sections analyze these feasibility aspects in relation to the major problems identified in the Daraz Bangladesh system"
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "2.2.1 Problem 01 : Product Authenticity and Quality Control"
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "2.2.1.1 Statement of the problem"
+ },
+ {
+  "type": "para",
+  "text": "Many customers who order products on Daraz Bangladesh receive items that are fake, damaged, or of much lower quality than what was shown on the website or app. This mainly happens because thousands of different sellers list products on Daraz, and not all of them are checked carefully before they are allowed to sell."
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "2.2.1.2 Summary of findings"
+ },
+ {
+  "type": "para",
+  "text": "The main issue is that Daraz does not have a strong enough system to check sellers and their products before allowing them to sell on the platform. Because of this, some sellers post wrong photos, wrong descriptions, or send products that are not what the customer expected. This lowers customer trust and can push buyers toward other shopping options."
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "2.2.1.3 Details of findings"
+ },
+ {
+  "type": "para",
+  "text": "Daraz Bangladesh works as a marketplace, which means the company itself does not make or directly control most of the products sold on the platform. Instead of thousands of independent sellers, ranging from small home businesses to large shops, list their own products and manage their own stock. This model helps Daraz offer a very large number of products, but also creates a problem . It becomes hard to check the quality and truth of every single listing."
+ },
+ {
+  "type": "para",
+  "text": "Customer reviews collected from independent websites show a repeating pattern. Buyers often say that the product they received does not match the picture or description on the app. Some say the item looked used or damaged when it arrived, even though it was listed as brand new. Others report receiving a completely different item than what they ordered, or a cheap copy of a well-known brand instead of the real product. In a few serious cases reported in the news, criminals created fake pages that looked like real Daraz seller stores, took payment from customers, and never sent any product at all."
+ },
+ {
+  "type": "para",
+  "text": "This kind of problem is common in large scale online marketplace around the world, not just in Bangladesh, because it is genuinely hard to check millions of products from thousands of sellers one by one. However, the impact on trust is still very real. When a customer receives a bad product, they often do not blame the seller. Instead, they blame Daraz as a company, since Daraz is the platform they used and trusted to place the order. This means that even one bad seller can create a bad experience that affects how a customer feels about the whole Daraz brand."
+ },
+ {
+  "type": "para",
+  "text": "Another part of the problem is that even when Daraz has some rules for sellers, such as warnings or account suspension for repeated complaints, this information is not always clear to customers before they buy. A customer usually only finds out that a seller has a bad reputation after they already receive a bad product. If there was a stronger and more visible system to check and rate sellers before a purchase, many of these bad experiences could be avoided in the first place."
+ },
+ {
+  "type": "para",
+  "text": "Looking at this problem through the five feasibility checks explained earlier, building a stronger seller-verification and product-quality system is technically possible, since many similar marketplaces around the world already use tools like ID verification, seller scorecards, and random quality audits. It is also operationally realistic, because it builds on top of the seller-management system Daraz already has, rather than replacing it completely. The main cost would come from hiring more staff or building automated tools to review sellers and products, but this cost is likely to be smaller than the long-term cost of losing customer trust. From a legal point of view, stronger checks on sellers would actually help Daraz follow consumer-protection expectations more closely, which lowers legal risk rather than raising it. Overall, this problem looks feasible to address within a reasonable schedule, especially if improvements are rolled out in stages, starting with the most complained-about product categories."
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "2.2.1.4 Recommendation"
+ },
+ {
+  "type": "list",
+  "ordered": false,
+  "items": [
+   "Build a stronger seller verification process before a new seller is allowed to open a shop on Daraz, checking basic identity and business information.",
+   "Use a clear seller rating and badge system, so customers can easily see which sellers have a strong history of good reviews before they buy.",
+   "Add random quality checks on best-selling and newly listed products, especially in categories like electronics and beauty products where fake items are more common.",
+   "Make it easy for customers to report fake or wrong products directly from the order page, and act quickly on sellers who receive many such reports.",
+   "Clearly warn customers when a product or seller has a history of complaints, instead of only showing this information after a problem happens."
+  ]
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "2.2.2 Problem 2 : Refund and Return Process"
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "2.2.2.1 Statement of the problem"
+ },
+ {
+  "type": "para",
+  "text": "Daraz customers often face long delays or unclear answers when they try to get a refund or return a product. In some cases, a return is collected by the delivery rider, but the customer never gets a clear confirmation, and the request is later cancelled without a proper reason."
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "2.2.2.2 Summary of findings"
+ },
+ {
+  "type": "para",
+  "text": "The refund and return process at Daraz lacks clear steps and fast communication. Customers are often left waiting without knowing the real status of their money or their returned item. This creates frustration and a feeling that the process is unfair, especially for customers who paid cash on delivery ."
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "2.2.2.3 Details of findings"
+ },
+ {
+  "type": "para",
+  "text": "A return and refund process usually has a few clear steps: the customer requests a return, the company approves or rejects it, the product is picked up, the product is checked, and finally the money is refunded. In the case of Daraz, customer reviews show that this chain of steps often breaks somewhere in the middle. Some customers report that the item was picked up by a rider, but they were never given a signed paper, a receipt, or even a simple message confirming that the return was received by the company."
+ },
+ {
+  "type": "para",
+  "text": "Later, some of these same customers say they checked their account and found that the return request had been marked as \"cancelled\", with no clear explanation of why. This is a serious gap, because from the customer's side, they gave away their product in good faith, but have no strong proof that this happened, and no clear next step to take if something goes wrong. Other customers describe cases where a delivery clearly failed, or a product clearly broken, but their refund request was still rejected without a proper review."
+ },
+ {
+  "type": "para",
+  "text": "Because Cash on Delivery is very common in Bangladesh, many customers have already handed over real cash before they realize a product needs to be returned. This makes a slow or unclear refund process feel even more unfair and stressful, since it is not just a digital number changing on a screen, but real money the customer is waiting to get back. When customers do not trust that a refund will actually happen, they may become hesitant to order certain types of products again, especially higher-priced items."
+ },
+ {
+  "type": "para",
+  "text": "The unclear refund process also creates extra pressure inside the company itself. When customers do not get clear updates, many of them contact customer support again and again to ask about their refund status. This adds more work to a support team that may already be dealing with many other requests, which can slow down response times for everyone, not just the customers with refund problems."
+ },
+ {
+  "type": "para",
+  "text": "From a feasibility point of view, fixing the return and refund process is one of the more straightforward problems to solve. Technically, adding status tracking and automatic messages to the return process uses the same kind of technology Daraz already uses for order and delivery tracking, so no completely new system needs to be built. Economically, the cost of adding these features is likely to be low compared to the savings gained from fewer repeated customer-support calls about refund status. Operationally, clearer return steps would actually make life easier for support staff too, since they would spend less time answering the same \"where is my refund\" questions again and again. There are no major legal barriers to making a refund process clearer and faster; if anything, clearer timelines help Daraz meet consumer-protection expectations. Overall, this problem can realistically be improved within a short to medium timeframe."
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "2.2.2.4 Recommendation"
+ },
+ {
+  "type": "list",
+  "ordered": false,
+  "items": [
+   "Give customers a clear, trackable status for every return, similar to how an order delivery is tracked, so they always know exactly what stage their return is at.",
+   "Send an automatic message or digital receipt the moment a rider picks up a returned item, so the customer has proof the return was received.",
+   "Set a clear maximum time limit for refunds to be completed, and share this time limit with customers so they know what to expect.",
+   "Explain the exact reason whenever a return or refund request is rejected or cancelled, instead of just changing the status with no message.",
+   "Create a simple way for customers to ask for a second review if they feel their refund was unfairly rejected."
+  ]
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "2.2.3 Problem 03: Account Security and Fraud"
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "2.2.3.1 Statement of the problem"
+ },
+ {
+  "type": "para",
+  "text": "Some Daraz customers have had their accounts accessed without their permission,leading to purchases they never approved.There are also separate cases of fake websites and fake social media pages pretending to be Daraz, which are used to steal money from unsuspecting buyers."
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "2.2.3.2 Summary of findings"
+ },
+ {
+  "type": "para",
+  "text": "Daraz faces two connected but different security risks: direct account hacking,where a real customer account to broken into and impersonation fraud ,where criminals create fake pages that only look like Daraz.Both problems reduce customer trust and put people’s money at risk and both point to a need for stronger digital safety measures."
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "2.2.3.3 Details of findings"
+ },
+ {
+  "type": "para",
+  "text": "Account security is one of the most serious issues for any platform that handles both personal information and payments . In one reported case, a Daraz customer’s account was accessed by someone else without permission and this access was used to buy a Daraz gift card.This gift card was then sent to an email address the account owner did not recognize and by the time the issue was noticed, the company was not able to cancel the order or take back the gift card .This shows that once an account is broken into,the current system does not have a fast enough way to stop or reverse the damage . Separately from direct hacking, there is also a pattern of fraud where criminals build fake websites with names very close to the real Daraz website or create fake Facebook pages using the Daraz name and logo. These fake pages are used to trick customers into paying for products that do not exist or that will never actually be shipped. Because these fake pages can look very convincing ,many ordinary customers cannot easily tell the difference between the real Daraz and a fake copy,especially when the offer looks like a good discount."
+ },
+ {
+  "type": "para",
+  "text": "On a bigger scale, a review carried out by a Bangladeshi financial authority looked into suspicious money transactions connected to several e-commerce platforms operating in the country,including Daraz, over a period of a few years .This shows that account and payment security issues are not only a small, personal problem for a few unlucky customers, but also something that has drawn attention at a national ,regulatory level. Separately ,general reports on online fraud in Bangladesh show that scam complaints related to online shopping have been rising quickly with criminals increasingly targeting accounts that are connected to mobile financial services such as bKash."
+ },
+ {
+  "type": "para",
+  "text": "All of these different pieces, from one hacked account, to fake websites, to wider financial-fraud patterns, point to the same root cause : the current system does not have strong enough tools to detect unusual activity early, confirm that a person trying to log in or make a purchase is really who they claim to be or clearly teach customers how to tell a real Daraz page from a fake one."
+ },
+ {
+  "type": "para",
+  "text": "Checking this problem against the 5 feasibility areas,account security improvements are technically well understood , since tools such as one time SMS codes and automatic fraud-flagging are already common across banking and mobile-financial service apps in Bangladesh ,so Daraz would not be starting from 0 .The economic cost of adding these tools in real investment,but it is small compared to the potential cost of losing customer trust on a national scale ,especially after a regulatory body has already raised concerns.Operationally ,extra security steps need to be added carefully so they do not make the checkout process too slow or annoying ,but this is a manageable design challenge .Legally ,stronger fraud protection actually helps Daraz stay aligned with financial sector expectations in Bangladesh ,rather than creating new legal risk .Given the seriousness of this problem , it deserves to be treated as a high priority within the project schedule, even if it takes a bit more time and coordination with the outside partners such as banks and mobile-financial-service providers ."
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "2.2.3.4 Recommendations"
+ },
+ {
+  "type": "list",
+  "ordered": false,
+  "items": [
+   "Add extra login security , such as sending a one-time code by SMS whenever someone logs in from a new device or tries to change account details .",
+   "Build a fraud detection system that flags unusual activity , such as a sudden high-value purchase or a login from an unexpected location,before the order is completed.",
+   "Given customers a fast and simple way to freeze their account and stop pending orders the moment they suspect their account has been hacked.",
+   "Run regular public awareness campaigns to teach customers how to recognize the real Daraz website and app and how to avoid fake pages and links.",
+   "Work closely with banks ,mobile financial service providers and government bodies to quickly report and act on suspicious transaction patterns."
+  ]
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "2.2.4 Problem 04: Delivery Service"
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "2.2.4.1 Statement of the problem"
+ },
+ {
+  "type": "para",
+  "text": "Daraz customers often experience delivery delays that go beyond the time shown at checkout. In some cases,delivery riders mark an order as failed or the customer as unreachable , even though the customer says they were available and waiting the whole time."
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "2.2.4.2 Summary of findings"
+ },
+ {
+  "type": "para",
+  "text": "While Daraz has improved its overall delivery speed a lot over the years by building its own logistics network and working with courier partners , delays and wrong status updates still happen. This creates a gap between what the app tells the customer and what is actually happening with their order ,which is one of the most visible and frustrating types of problems for any online shopper."
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "2.2.4.3 Details of findings"
+ },
+ {
+  "type": "para",
+  "text": "Delivery is often described as the final and most important step of the online shopping experience,because it is the moment a customer actually receives what they paid for. In the early years of e-commerce in Bangladesh, delivery times ere often quite long,sometimes taking around 7 to 9 days for a single order to arrive .Over time, Daraz built its own delivery network and also partnered with third-party courier companies to speed things up.Beacuse of these changes ,average delivery time in many areas has dropped to around 2 to 3 days,which is a big improvement ."
+ },
+ {
+  "type": "para",
+  "text": "However ,even with this progress ,delivery problems have not fully gone away. Customer reviews describe cases where an order simply takes much longer than the estimated delivery rate shown at the time of purchase ,without any clear updated explanation from the company .Other reviews describe a more specific and frustrating problem: the delivery status shows that a rider attempted delivery and could not reach the customer or that the customer was “ unreachable “ , while the customer insists they were home and available the entire time, sometimes even keeping their phone nearby all day waiting for the delivery call."
+ },
+ {
+  "type": "para",
+  "text": "This mismatch is difficult for a customer to challenge after the fact,since there often no simply way to prove what actually happened during a failed delivery attempt .From the customer’s side ,this can feel like they are being blamed for a problem that was not their fault,which adds to their frustration on top of simply not receiving their order on time .Since a large country like Bangladesh has crowded city traffic,seasonal weather problems and harder to reach rural areas ,some delays are naturally expected but customers still expect clear and honest communication when something goes wrong , rather than a status update that does not match reality."
+ },
+ {
+  "type": "para",
+  "text": "Because delivery is the last thing a customer expectations in their shopping journey , a bad delivery experience can undo a lot the good will built up during browsing,ordering payments,even if those earlier steps went smoothly.This makes delivery reliability one of the most important areas for Daraz to keep improving ,even though real progress has already been made compared to the early days of the company."
+ },
+ {
+  "type": "para",
+  "text": "Looking at delivery through the 5 feasibility checks, this problem is technically feasibility to improve ,since Daraz already has a working logistics network and simply needs better"
+ },
+ {
+  "type": "para",
+  "text": "proof-of-attempts tools and clearer rider accountability ,rather than a completely new delivery system . Economically ,the cost of adding simple tools like photo proof or call logs is small,especially compared to the cost of losing repeat customers due to bad delivery experiences. Operationally ,this change mainly affects how riders record their work,which means it can be added through training and a small update to the rider app,without disrupting the whole delivery network .There are no major legal issues involved in improving delivery accuracy .Given that Daraz has already shown it can make big improvements to delivery speed in the past ,further improvements to delivery accuracy and communication are realistic within a reasonable schedule."
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "2.2.4.4 Recommendation"
+ },
+ {
+  "type": "list",
+  "ordered": false,
+  "items": [
+   "Give delivery riders a simple way to log proof of a failed delivery attempt , such as a short note,a call log or a photo,instead of only a status label.",
+   "Allow customers to reschedule a delivery time themselves through the app if they know they will not be available at a certain time.",
+   "Send real- time delivery updates with a working contact number for the rider,so customers and riders can coordinate directly if there is any confusion.",
+   "Track and review delivery riders who have a high number of “failed delivery” or “Unreachable customer” reports , to check if this is a pattern rather than a one-time mistake.",
+   "Continue to expand the logistics network and courier partnerships in harder-to-reach areas outside of the major cities."
+  ]
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "2.2.5 Problem 05:Customer Support and Seller Communication"
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "2.2.5.1 Statement of the problem"
+ },
+ {
+  "type": "para",
+  "text": "Many Daraz customers find it hard to reach a real support agent when they have a problem ,often getting stuck with an automatic chatbot that does not solve their issue.Communication with individual sellers is also often slow,especially when a customer needs help with an order problem."
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "2.2.5.2 Summary of findings"
+ },
+ {
+  "type": "para",
+  "text": "Customer support at araz relies heavily on automatic chat systems, which can feel un helpful when a customer has a specific or unusual problem. At the same time, since Daraz works with many independent sellers,the speed and quality of communication can vary a lot from one seller to another, and this is harder for Daraz to fully control."
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "2.2.5.3 Details of findings"
+ },
+ {
+  "type": "para",
+  "text": "Good customer support is one of the most important parts of any online shopping platform,because it is the main way a company can fix a problem after something has already gone wrong.Beased on customer reviews, a common complaint about Daraz is that reaching a real human support agent is difficult. Many customers describe being met first by an automatic chatbot, which asks simple preset questions and gives per-written answers. For simple issues,this can work fine, but for more specific or unusual problems,customers often feel like they are going in circles without getting real help."
+ },
+ {
+  "type": "para",
+  "text": "Some customers report an even more frustrating pattern, where a support chat is closed by the"
+ },
+ {
+  "type": "para",
+  "text": "company side before their actual problem has been solved.This leaves the customer needing to start the whole conversation over again, sometimes repeating the same details multiple times to different support staff or bots. This kind of repeated effort can make a customer feel unheard, especially if they are already upset about a separate problem, such as a late delivery or a damaged product."
+ },
+ {
+  "type": "para",
+  "text": "On top of platform-level support, communication with individual sellers is a separate but related"
+ },
+ {
+  "type": "para",
+  "text": "issue.Since Daraz is a marketplace with thousands of independent sellers, each seller manages their own communication with buyers,usually through in app chat. Some sellers reply quickly and helpfully, while others are slow to respond or do not reply at all, especially once a sale has already been completed. This creates an inconsistent experience, where a customer's satisfaction can depend heavily on which specific seller they happened to buy from, rather than on Daraz as a whole company."
+ },
+ {
+  "type": "para",
+  "text": "Because Daraz has limited direct control over how quickly a seller replies, this part of the problem is harder to fix compared to Daraz's own support team. However, Daraz can still play a stronger role in tracking seller response times and setting clear expectations for how fast sellers should respond to buyer messages. Without this kind of oversight,poor seller communication continues to reflect badly on the whole Daraz platform, even when the fault lies mainly with one individual seller."
+ },
+ {
+  "type": "para",
+  "text": "From a feasibility standpoint, improving customer support is realistic and does not require any"
+ },
+ {
+  "type": "para",
+  "text": "unusual or experimental technology.Technically, adding an easier path to a human agent and"
+ },
+ {
+  "type": "para",
+  "text": "tracking seller response times can be built on top of the chat and messaging systems Daraz already runs. Economically,better support may need a bit more staffing or smarter routing tools, but this cost is balanced out by fewer repeated support tickets and happier,more loyal customers over time.Operationally, clearer rules about when a chat can be closed, and expected seller response times are simple policy changes rather than large technical projects, which makes them easier to put into practice quickly.There are no legal barriers to improving support quality.Overall, this is one of the more achievable problem to fix, and improvements here could start showing results in a relatively short amount of time."
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "2.2.5.4 Recommendation"
+ },
+ {
+  "type": "list",
+  "ordered": false,
+  "items": [
+   "Give customers a clear and easy way to reach a real human support agent, especially after a chatbot has failed to solve their problem twice.",
+   "Set a rule that a support chat cannot be closed by the company side unless the customer confirms their issue is actually solved.",
+   "Track and publicly display average seller response times, so customers can see this information before they buy from a seller.",
+   "Set a minimum expected response time for sellers, and follow up with sellers who repeatedly reply too slowly to buyer messages.",
+   "Offer multiple ways to contact support, such as chat, phone, and email, so customers can choose the option that works best for their specific problem."
+  ]
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "2.2.6 Overall Feasibility Summary"
+ },
+ {
+  "type": "para",
+  "text": "Before moving to the conclusion, it is helpful to put all five problems side by side and see how they compare across the five feasibility areas discussed earlier in this chapter. The table below gives a simple, high-level view of this comparison, based on the details of findings explained above."
+ },
+ {
+  "type": "table",
+  "rows": [
+   [
+    "Problem",
+    "Technical",
+    "Economic",
+    "Operational",
+    "Legal",
+    "Schedule"
+   ],
+   [
+    "Product Authenticity and Quality Control",
+    "Feasible",
+    "Moderate cost",
+    "Feasible",
+    "Low risk",
+    "Medium term"
+   ],
+   [
+    "Refund and Return process",
+    "Highly feasible",
+    "Low cost",
+    "Highly feasible",
+    "Low risk",
+    "Short term"
+   ],
+   [
+    "Account Security and Fraud",
+    "Feasible",
+    "Higher cost",
+    "Feasible",
+    "Low risk",
+    "Medium term"
+   ],
+   [
+    "Delivery service",
+    "Highly Feasible",
+    "Low cost",
+    "Feasible",
+    "Low risk",
+    "Short term"
+   ],
+   [
+    "Customer support and seller Communication",
+    "Highly Feasible",
+    "Low cost",
+    "Highly Feasible",
+    "Low risk",
+    "Short term"
+   ]
+  ]
+ },
+ {
+  "type": "para",
+  "text": "Table 2.1: Simple feasibility comparison across the five identified"
+ },
+ {
+  "type": "para",
+  "text": "As the table shows, none of the five problems were found to be unrealistic or impossible to fix. The refund and return process, delivery service, and customer support problems all look easier and faster to improve, mainly because they build on systems Daraz already has in place. Product"
+ },
+ {
+  "type": "para",
+  "text": "authenticity and account security are a little more demanding, since they need extra tools such as"
+ },
+ {
+  "type": "para",
+  "text": "fraud detection and stronger seller checks, but they are still realistic to achieve with proper planning and a reasonable budget."
+ },
+ {
+  "type": "heading",
+  "level": 3,
+  "text": "2.3 Conclusion"
+ },
+ {
+  "type": "para",
+  "text": "This chapter has looked at five main problems identified in chapter 1 through the lens of initial feasibility analysis. For each problem , we explained the situation in more detail, described the patterns found in customer reviews and public reports, checked the problem against technical, economic, operational, legal, and schedule feasibility, and gave clear, practical recommendations that could help improve the situation."
+ },
+ {
+  "type": "para",
+  "text": "Across all five problems, a few common themes appear again and again. Many of the issues come from the fact that Daraz operates at a very large scale, connecting millions of customers with thousands of independent sellers and a nationwide delivery network. At this scale, even a small page in checking communication, or security can affect a very large number of people. At the same time, the recommendations given in this chapter show that most of these problems can be improved without needing a completely new business model. Many of the fixes are about adding clearer checks, faster communication, and better use of technology, such as automatic status updates, stronger fraud detection, and clearer seller ratings."
+ },
+ {
+  "type": "para",
+  "text": "It is also worth noting that these five problems are not fully separate from each other. For example, weak seller verification (Problem 1) can make fake-product complaints harder to resolve through the refund process (Problem 2). Similarly, weak account security (Problem 3) can lead to disputed orders that then create extra pressure on customer support (Problem 5). This means that solving one problem well can often make it easier to solve another, which is a useful thing to keep in mind when planning which improvements to build first."
+ },
+ {
+  "type": "para",
+  "text": "Based on this initial feasibility check, all five problems appear realistic and worth pursuing further. None of them require something impossible or extremely rare in the e-commerce industry; in fact, many similar platforms around the world already use some version of the solutions recommended here. This means the project can move forward with confidence into the next stage. Chapter 3 will now go into a deeper analysis of the existing system, using information gathering tools, charts, a cost-benefit and break-even analysis, and a closer look at the root causes behind these problems."
+ }
+]

@@ -1,0 +1,297 @@
+[
+ {
+  "type": "heading",
+  "level": 1,
+  "text": "Chapter 4"
+ },
+ {
+  "type": "heading",
+  "level": 1,
+  "text": "Design"
+ },
+ {
+  "type": "heading",
+  "level": 1,
+  "text": "4.1 Introduction"
+ },
+ {
+  "type": "para",
+  "text": "System design is the stage where everything learned during analysis is turned into an actual plan for how the new or improved system will work. While Chapter 3 focused on understanding the existing Daraz Bangladesh system and the problems inside it, this chapter focuses on building a clear, practical design that directly solves those problems."
+ },
+ {
+  "type": "para",
+  "text": "Good system design usually involves a few key activities: deciding on the overall structure of the system, defining how data will move between its different parts, designing the underlying database, and designing the actual screens and forms that users will interact with. A system design should not just look good on paper; it needs to be realistic to build, easy for users to understand, and strong enough to handle the scale at which Daraz Bangladesh operates."
+ },
+ {
+  "type": "para",
+  "text": "This chapter follows that structure. Section 4.2 proposes two candidate systems, compares them, and selects the stronger option, along with a detailed Data Flow Diagram (DFD) for the chosen design."
+ },
+ {
+  "type": "para",
+  "text": "Section 4.3 covers the database design, including an Entity-Relationship (ER) diagram and a data dictionary describing each table. Section 4.4 presents the design of key new forms and screens needed to support the proposed system. Section 4.5 closes the chapter with a short summary."
+ },
+ {
+  "type": "heading",
+  "level": 1,
+  "text": "4.2 DFD of the Proposed Candidate System"
+ },
+ {
+  "type": "para",
+  "text": "Before settling on a single design, it is good practice to consider more than one possible way to solve the identified problems, and to compare them before choosing. Before settling on a single design, it is good practice to consider more than one possible way to solve the identified problems, and to compare them before choosing. Before settling on a single design, it is good practice to consider more than one possible way to solve the identified problems, and to compare them before choosing."
+ },
+ {
+  "type": "heading",
+  "level": 2,
+  "text": "4.2.1 Candidate System 1: Comprehensive Automated Trust and Security System"
+ },
+ {
+  "type": "para",
+  "text": "This candidate system takes a fuller, more automated approach to solving Daraz's problems."
+ },
+ {
+  "type": "para",
+  "text": "It introduces a Seller Verification and Product Authenticity Check process that requires new sellers to submit identity and business documents before their shop goes live, and continuously"
+ },
+ {
+  "type": "para",
+  "text": "updates a visible Trust Score for each seller based on order history, complaint rate, and delivery performance."
+ },
+ {
+  "type": "para",
+  "text": "For account security, this system adds a Fraud Detection and OTP Verification step at checkout, which uses a risk-scoring engine to flag unusual account activity, such as a login from a new device followed immediately by a high-value order, and requires a one-time SMS code before the order can proceed in risky cases. For account security, this system adds a Fraud Detection and OTP Verification step at checkout, which uses a risk-scoring engine to flag unusual account activity, such as a login from a new device followed immediately by a high-value order, and requires a one-time SMS code before the order can proceed in risky cases. Finally, a Support Ticket and Escalation process guarantees that any issue not resolved by the chatbot within a set time is automatically handed to a human agent with a tracked service-level deadline."
+ },
+ {
+  "type": "heading",
+  "level": 2,
+  "text": "4.2.2 Candidate System 2: Incremental, Lower-Cost System"
+ },
+ {
+  "type": "para",
+  "text": "This candidate system aims to solve the same five problems, but with a lighter, lower-cost approach that could be rolled out faster. . Instead of a full document-based seller verification process, sellers are grouped into simple trust tiers (New, Standard, Verified) based only on order history and complaint counts that Daraz already collects, without requiring new document uploads."
+ },
+ {
+  "type": "para",
+  "text": "For account security, instead of a full risk-scoring engine, this system uses simpler rule-based checks, such as automatically requiring an SMS OTP any time a password is changed or a new delivery address is added, without a continuous behind-the-scenes scoring system. For account security, instead of a full risk-scoring engine, this system uses simpler rule-based checks, such as automatically requiring an SMS OTP any time a password is changed or a new delivery address is added, without a continuous behind-the-scenes scoring system. For delivery, riders confirm delivery using a shared OTP code only, without a photo requirement, which is faster for the rider but offers slightly weaker proof in disputed cases. For returns, customers get a simple SMS update at each stage of the return, rather than a fully trackable in-app status screen. Support tickets are still escalated to a human agent when unresolved, but without a strict, tracked time deadline attached to each case."
+ },
+ {
+  "type": "heading",
+  "level": 2,
+  "text": "4.2.3 Comparison of Candidate Systems"
+ },
+ {
+  "type": "para",
+  "text": "The table below gives a simple, qualitative comparison of the two candidate systems across the criteria that matter most for this project: how strong the fraud and authenticity protection is, how good the customer experience is, and how much it costs and how long it takes to build."
+ },
+ {
+  "type": "table",
+  "rows": [
+   [
+    "Evaluation Criteria",
+    "Candidate System 1",
+    "Candidate System 2"
+   ],
+   [
+    "Seller verification strength",
+    "Very good (document-based)",
+    "Satisfactory (history-based only)"
+   ],
+   [
+    "Fraud detection strength",
+    "Very good (risk-scoring engine)",
+    "Good (rule-based checks)"
+   ],
+   [
+    "Delivery dispute protection",
+    "Very good (code + photo)",
+    "Satisfactory (code only)"
+   ],
+   [
+    "Refund transparency",
+    "Very good (full tracking)",
+    "Good (SMS updates only)"
+   ],
+   [
+    "Support resolution speed",
+    "Very good (tracked SLA)",
+    "Good (no strict SLA)"
+   ],
+   [
+    "Estimated build cost",
+    "Higher",
+    "Lower"
+   ],
+   [
+    "Estimated build time",
+    "Longer (phased rollout needed)",
+    "Shorter (faster to launch)"
+   ]
+  ]
+ },
+ {
+  "type": "para",
+  "text": "Table 4.1: Qualitative comparison of the two candidate systems"
+ },
+ {
+  "type": "para",
+  "text": "To make the comparison more concrete, a simple weighted scoring exercise was also carried out. Each criterion was given a weight based on how important it is to solving the problems identified earlier in this report, and each candidate system was scored from 1 to 5 against that criterion."
+ },
+ {
+  "type": "table",
+  "rows": [
+   [
+    "Criteria",
+    "Weight",
+    "System 1 Rating",
+    "System 1 Score",
+    "System 2 Rating",
+    "System 2 Score"
+   ],
+   [
+    "Seller verification",
+    "5",
+    "5",
+    "25",
+    "3",
+    "15"
+   ],
+   [
+    "Fraud detection",
+    "5",
+    "5",
+    "25",
+    "4",
+    "20"
+   ],
+   [
+    "Delivery dispute protection",
+    "4",
+    "5",
+    "20",
+    "3",
+    "12"
+   ],
+   [
+    "Refund transparency",
+    "4",
+    "5",
+    "20",
+    "4",
+    "16"
+   ],
+   [
+    "Support resolution speed",
+    "3",
+    "5",
+    "15",
+    "4",
+    "12"
+   ],
+   [
+    "Cost-effectiveness",
+    "3",
+    "3",
+    "9",
+    "5",
+    "15"
+   ],
+   [
+    "Total",
+    "",
+    "",
+    "114",
+    "",
+    "90"
+   ]
+  ]
+ },
+ {
+  "type": "para",
+  "text": "Table 4.2: Weighted evaluation matrix for the two candidate systems."
+ },
+ {
+  "type": "heading",
+  "level": 2,
+  "text": "4.2.4 Selecting the Best Candidate System"
+ },
+ {
+  "type": "para",
+  "text": "Based on the weighted evaluation, candidate system 1 scores noticeably higher overall, mainly"
+ },
+ {
+  "type": "para",
+  "text": "because it offers stronger protection in exactly the areas that were shown, in chapter 1 through 3, to matter most: seller verification, fraud detection,and delivery-dispute protection. Candidate System 2 remains a reasonable lower-cost fallback option if Daraz Bangladesh wants to roll out improvements in smaller, faster stages, but Candidate System 1 is recommended as the primary design to move forward with, since it more fully addresses the root causes identified earlier in this report. The remainder of this chapter is based on Candidate System 1."
+ },
+ {
+  "type": "heading",
+  "level": 2,
+  "text": "4.2.5 DFD of the Selected Candidate System"
+ },
+ {
+  "type": "para",
+  "text": "The diagram below shows the proposed candidate system's order-to-delivery workflow, highlighting the new processes added to address the problems identified earlier in this report."
+ },
+ {
+  "type": "para",
+  "text": "Figure 4.1: Data Flow Diagram (DFD) of the proposed candidate system (Candidate System 1)."
+ },
+ {
+  "type": "para",
+  "text": "The process begins the same way as the existing system, with the Customer browsing and searching for products, but Process 1.0 now also pulls a Seller Trust Score from the Product Catalog and Seller Score File, so customers can see this information before buying. Process 2.0, Seller Verification and Product Authenticity Check, is a new process where the Seller submits identity and business documents, which updates their trust score in the catalog file."
+ },
+ {
+  "type": "para",
+  "text": "At checkout, Process 5.0, Fraud Detection and OTP Verification, is a new step that checks the payment attempt for risk factors and, when needed, asks the Customer to confirm a one-time code before the order proceeds. This risk score is logged in the Payment and Fraud Log File. Once payment is verified, Process 6.0 processes the payment as before, and Process 7.0 lets the Seller confirm the order."
+ },
+ {
+  "type": "para",
+  "text": "Process 8.0, Pack and Generate Delivery Proof Code is another new addition: instead of simply heading the parcel to the courier, the system generates a proof code tied to that specific order. Process 9.0, Deliver Order and capture proof requires the rider to collect this code (and optionally a photo) directly from the customer at the point of delivery, which is logged in the new Delivery Proof File."
+ },
+ {
+  "type": "para",
+  "text": "Process 10.0, Return and Refund with Digital Receipt, immediately issues a digital receipt the moment a return is logged, and tracks the refund status in the Return and Refund File. Finally, Process 11.0, Support Ticket and Escalation, logs every support query in a Support Ticket File with an attached service-level deadline, and automatically routes the case to a human Support Agent if it is not resolved in time."
+ },
+ {
+  "type": "heading",
+  "level": 2,
+  "text": "4.2.6 How the Proposed System Solves the Identified Problems"
+ },
+ {
+  "type": "table",
+  "rows": [
+   [
+    "Problem (Chapter 1)",
+    "New Process in Proposed System",
+    "How It Helps"
+   ],
+   [
+    "Product Authenticity and Quality Control",
+    "Process 2.0 — Seller Verification and Product Authenticity Check",
+    "Sellers are checked before selling, and a visible trust score warns customers about risky sellers before they buy."
+   ],
+   [
+    "Refund and Return Process",
+    "Process 10.0 — Return and Refund with Digital Receipt",
+    "Every return is immediately confirmed with a digital receipt, and refund status becomes trackable step-by-step."
+   ],
+   [
+    "Account Security and Fraud",
+    "Process 5.0 — Fraud Detection and OTP Verification",
+    "Risky logins or purchases require extra confirmation, catching fraud before an order completes."
+   ],
+   [
+    "Delivery Service",
+    "Process 8.0 & 9.0 — Delivery Proof Code and Capture",
+    "A delivery cannot be marked complete or failed without a proof code or logged attempt, reducing disputes."
+   ],
+   [
+    "Customer Support and Seller Communication",
+    "Process 11.0 — Support Ticket and Escalation",
+    "Unresolved chatbot conversations are automatically escalated to a human agent within a tracked time limit."
+   ]
+  ]
+ },
+ {
+  "type": "para",
+  "text": "Table 4.3: Mapping of each identified problem to its corresponding new process in the proposed system"
+ }
+]

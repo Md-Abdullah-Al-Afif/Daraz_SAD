@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", "Source Serif 4", serif;
+  --font-body: "Inter", "IBM Plex Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --color-ink: #10141a;
+  --color-panel: #171d24;
+  --color-panel-2: #1d2530;
+  --color-hair: #2a323d;
+  --color-paper: #edeee9;
+  --color-paper-dim: #a3adb8;
+  --color-signal: #ff7a33;
+  --color-signal-dim: #7a3915;
+  --color-teal: #4fd1c5;
+  --color-rose: #ea6470;
+  --color-gold: #eab648;
+  --color-moss: #7fbf7a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: var(--color-signal);
+  color: #10141a;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3a4450 transparent;
+}
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #3a4450; border-radius: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+.doc-prose p {
+  color: var(--color-paper);
+  line-height: 1.75;
+  font-size: 15.5px;
+  margin-bottom: 1.1em;
+}
+.doc-prose ul, .doc-prose ol {
+  margin: 0 0 1.3em 0;
+  padding-left: 1.3em;
+  color: var(--color-paper);
+}
+.doc-prose li {
+  margin-bottom: 0.5em;
+  line-height: 1.65;
+  font-size: 15.5px;
+}
+.doc-prose ul { list-style-type: disc; }
+.doc-prose ol { list-style-type: decimal; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}

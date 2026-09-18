@@ -1,0 +1,769 @@
+[
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Chapter 3"
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Analysis"
+ },
+ {
+  "type": "heading",
+  "level": 3,
+  "text": "3.1 Introduction"
+ },
+ {
+  "type": "para",
+  "text": "Information gathering and detailed analysis are some of the most important steps in system analysis.This stage is about collecting,organizing and studying information about the system so that we can fully understand how it works,what its requirements are and what problems exist inside it.Without good information, it is not possible to make good decisions about how to improve a system."
+ },
+ {
+  "type": "para",
+  "text": "The main goal of this stage is to find the real problems and opportunities that need attention.This usually means looking closely at how the current system works,how users interact with it and what data or reports are already available about it.A good analyst tries to collect information from many different angles so that the final picture is complete and fair,instead of relying on just one point of view."
+ },
+ {
+  "type": "para",
+  "text": "This chapter follows that same approach for Daraz Bangladesh.Instead of relying on a single source of information,several different tools are combined so that the strengths of one tool can help cover the gaps left by another.A review of published literature and procedures gives broad,industry-level context;direct observation of the platform show how the system behaves moment to moment; a real call to Daraz’s own customer care helpline adds a first-hand, human data point; and a structured analysis of public customer reviews adds scale, by turning many individual experiences into patterns that can be compared and charted."
+ },
+ {
+  "type": "para",
+  "text": "By carefully gathering and studying information,we are able to build a clear and realistic picture of how Daraz Bangladesh’s ordering,payment,delivery and support system works today.This understanding is the base on which the rest of this chapter and the design work in Chapter 4,will be built."
+ },
+ {
+  "type": "heading",
+  "level": 3,
+  "text": "3.2 Information Gathering"
+ },
+ {
+  "type": "para",
+  "text": "Gathering information is a key part of the analysis process. It requires both a scientific side and a creative side.The scientific side means using organized methods and tools so that information is collected in a fair and structured way. The creative side means using good judgment to understand what the information actually means and to notice patterns that are not always obvious at first glance."
+ },
+ {
+  "type": "para",
+  "text": "There is no single fixed way to gather information for every project.However, one rule the same in every case;information should be collected carefully,honestly and in a way that causes as little disturbance as possible to the people or systems being studied.For this report,four main tools were used to gather information about Daraz Bangladesh’s system.These four tools are Review of literature,procedure and forms;On-site observation;Interview; and Questionnaires.Each of these tools is explained in sections that follow."
+ },
+ {
+  "type": "para",
+  "text": "It is worth being upfront about one practical limit: reaching Daraz Bangladesh’s senior management directly for a formal interview is not realistic for a student project.Because of this, the interviews section in this chapter is built around a channel that is genuinely reachable,Daraz’s own customer care helpline, combined with information already published by the company itself.This keeps the information gathering process honest and grounded in real,verified channels rather than assuming access that a student group would not normally have."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "3.2.1 Review Of Literature,Procedure And Forms"
+ },
+ {
+  "type": "para",
+  "text": "Reviewing literature,procedure and forms is one of the most useful early steps in information gathering . It means looking at existing knowledge, common industry practices and the standard documents or screens already used inside a system. This step builds a strong foundation before moving on to more direct methods such as interviews or questionnaires."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Review Of Literature"
+ },
+ {
+  "type": "para",
+  "text": "The review of literature means studying general knowledge,industry standards and research related to the field being analyzed.For Daraz Bangladesh ,this means looking closely at trends in e-commerce marketplace,both in Bangladesh and around the world,to understand what ” good practice” looks like in this industry."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Industry Standards"
+ },
+ {
+  "type": "para",
+  "text": "Large online marketplaces around the world,such as Amazon,Alibaba and Shopee, generally follow a set of common standards to keep customers safe and happy.These standards include verifying sellers before allowing them to sell,offering buyer protection programs that guarantee a refund if a product does not arrive or does not match its description and using automated systems to detect fraud before an order is completed.Studying these standards helps us understand where Daraz Bangladesh’s current practices might be falling behind what is now considered normal in the wider e-commerce industry."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Best practices"
+ },
+ {
+  "type": "para",
+  "text": "Looking at how other successful e-commerce platforms manage their operations gives useful ideas for improvement.For example,many platforms use a clear “seller score” system,where a seller’s rating,response time and order-cancellation rate are shown directly to customers before they buy.Some platforms also use real-time chat support with a guarantee maximum wait time and automatic refunds for very common and simple problems and its customers and are useful models to compare against Daraz Bangladesh’s current system."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Technology Advancements"
+ },
+ {
+  "type": "para",
+  "text": "New technology is charging how e-commerce platforms operate. Many platforms now use artificial intelligence to predict which products are likely to be fake based on price , seller history and product and product category. Real-time GPS tracking is now common for delivery, allowing customers to see exactly where their rider is on a map. Automated fraud-detection systems can flag unusual account activity ,such as a sudden login from a new device followed by a large purchase, within seconds.These kinds of technology can offer useful direction for how Daraz Bangladesh could strengthen its own system."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Comparison With Other Platforms Operating In Bangladesh"
+ },
+ {
+  "type": "para",
+  "text": "Looking briefly at how other platforms operating in Bangladesh,such as Pathao Food,Foodpanda and Chaldal,handle similar problems is useful context for this review.Ride-share and delivery platforms like Pathao generally give customers a way to directly message or call their assigned rider,something Daraz’s delivery tracking does not currently offer.Grocery platforms like Chaldal,which manage their own stock rather than relying on third-party sellers are able to check product quality more directly before an order ships,which is harder for Daraz to do given its much larger,marketplace-based catalog.This kind of comparison shows that some of Daraz’s problems come from the specific tradeoffs of running a large,open marketplace,rather than a lack of technology alone;even so,several of the practices used by these other platforms could still be adapted to fit Daraz’s own system."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Review Of Procedures"
+ },
+ {
+  "type": "para",
+  "text": "Reviewing internal procedures means looking closely at the steps a company its daily work.Since it is not possible to sit inside.Daraz Bangladesh’s own operations meetings,this review is based on how the process appears from the outside,through the app,the website,public help-center pages and description the company has shared about its own operations."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Order Processing"
+ },
+ {
+  "type": "para",
+  "text": "The order process on Daraz begins when a customer searches for a product,adds it to their cart and proceeds to checkout.The customer then selects a payment method,which can be Cash on delivery ,a mobile financial service such as a bKash or Nagad or a card payment.Once the order is placed,it is sent to the for confirmation and then prepared for handover to a delivery partner .Reviewing this process closely shows that most delays and confusion tend to happen either right after an order is placed, while waiting for seller confirmation, or during the final handover to the delivery rider."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Seller Onboarding"
+ },
+ {
+  "type": "para",
+  "text": "Sellers who want to open a shop in Daraz go through a registration process where they provide basic business details and list their products. Based on public information ,this process appears to focus mainly on getting sellers active quickly ,rather than doing a very deep check of the seller’s history or the authenticity of their product.This matches what was found earlier in Chapter 1 and Chapter 2,where weak seller verification was identified as a root cause behind fake or low-quality product complaints."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Delivery Operations"
+ },
+ {
+  "type": "para",
+  "text": "Daraz coordinates delivery through its own logistics network and through courier partners such as Paperfly,REDX and eCourier. Order are grouped,handed over to riders and tracked through a delivery -status system inside the app.This process has clearly improved a lot over the years,cutting delivery times from around seven to nine days down to two to three days in many areas.However, the review of this procedure also shows that once a parcel handed over to a courier partner, Daraz’s own visibility and control over exactly what happens during the last mile of delivery becomes more limited."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Customer Service Procedure"
+ },
+ {
+  "type": "para",
+  "text": "Customer service on Daraz is mainly handed through an in-app chat system,which usually starts with an automated chatbot before, in some cases,moving to a human agent.Daraz also runs a Central Complaint Management System (CCMS),a formal channel through which customers and sellers can raise complaints that need closer review .Reviewing this procedure shows that the process is built to handle a very large number of simple, repeated questions quickly,but it appears less well designed for handling more complex or unusual complaints that need a real person’s judgment."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Review Of Forms"
+ },
+ {
+  "type": "para",
+  "text": "Forms,whether they appear as a digital screen or a printed document are an important part of how a company collects and manages data.Reviewing the forms used by Daraz Bangladesh helps us understand how information flows into and out of the system."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Order Form"
+ },
+ {
+  "type": "para",
+  "text": "The order form on Daraz collects the customer’s delivery address,preferred delivery time slot,payment method and any applicable discount code.This form is generally easy to use but reviewing customer feedback shows that some customers want clearer confirmation right after submitting the form,since they are sometimes unsure whether their order actually went through ,especially during high-traffic sale products."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Seller Registration Form"
+ },
+ {
+  "type": "para",
+  "text": "The seller registration form collects basic business and contact information from a new seller before they can start listing products.Based on public information,this form does not appear to require heavy documentation or a long waiting period,which makes it easy for legitimate small business to join quickly,but may also make it easier for a small number of dishonest sellers to join without being properly checked."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Return Feedback and Review"
+ },
+ {
+  "type": "para",
+  "text": "The return and refund form lets a customer choose a reason for their return,such as a wrong item,a damaged item,or a change of mind and then submit a request.Reviewing this form shows that while it is simple to fill out,it does not always give the customer a clear,trackable confirmation once submitted , which matches the refund and return problems already identified in Chapter 1 and Chapter 2 ."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Customer Feedback and Review Form"
+ },
+ {
+  "type": "para",
+  "text": "After a delivery is completed,customers are able to leave a star rating and a written review for both the product and the seller.This form is useful for collecting customer opinions and it is also one of the main sources of information used this report ,since these public reviews are what allowed us to study patterns in customer satisfaction alongside the direct helpline contact described later in this chapter."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "CCMS"
+ },
+ {
+  "type": "para",
+  "text": "Daraz Bangladesh also provides a separate ,more formal complaint form through its CCMS.This system is meant for issues that were not resolved through the normal chat based support process and it appears to be aimed at giving customers and sellers a more structured , trackable way to escalate a serious or unresolved problem."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Review Of Public Reports and Disclosures"
+ },
+ {
+  "type": "para",
+  "text": "Beyond the company’s own material,useful information also comes public reports written by outside parties.Local business news outlets,such as The Business Standard,The Daily Star and Future Startup,regularly publish coverage of Daraz’s market position,leadership changes and any notable incidents,including fraud cases involving fake websites that impersonate the Daraz brand.A financial review carried out by a Bangladeshi financial authority also looked into suspicious transaction patterns connected to several e-commerce platforms operating in the country ,including Daraz ,which is useful independent context for the account-security problem identified in Chapter 1."
+ },
+ {
+  "type": "para",
+  "text": "Reviewing this kind of outside reporting ,alongside Daraz’s own literature,procedures and forms , helps balance the picture.Company-published materials naturally focus on what the platform does well and how customers are meant to use it,while independent news coverage and regulatory findings are more likely to surface the problems that a purely internal or promotional source might not mention."
+ },
+ {
+  "type": "para",
+  "text": "Taken together ,this review of literature ,procedures and forms gives a strong starting picture of how the Daraz Bangladesh system works today and it lines up closely with the problems identified in the earlier chapters of this report .This next series will build on this picture using on-site observation ,interviews and questionnaires."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "3.2.2 On-Site Observation"
+ },
+ {
+  "type": "para",
+  "text": "On site observation is normally done by physically visiting a company's office or warehouse. Since a direct visit to Daraz Bangladesh's offices or warehouses was not possible for this project,the observation for this report instead focuses on the platform itself,meaning the Daraz mobile app and website,which are the parts of the system that customers actually interact with everyday. Careful,hands-on use of the app and website,combined with attention to how orders, payments, and deliveries are shown to the user, gives useful insight into how the system behaves in real use."
+ },
+ {
+  "type": "para",
+  "text": "The goal of this observation was to check how smoothly a customer can move through the full shopping journey, from opening the app to receiving a product ,and to notice any points where the system seems unclear, slow, or inconsistent. The following points summarize what was observed."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "1.Home Page and Product Browsing"
+ },
+ {
+  "type": "para",
+  "text": "The Daraz home page is built around large banners for ongoing sales, category shortcuts, and personalized product suggestions. Searching for a product is fast, and filters for price, brand, and rating are available. However, product listing from different sellers for the same item can appear side by side with very different prices and photo quality, which can make it hard for a customer to judge which listing is trustworthy just by looking at the same results"
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "2. Product Page and Seller Information"
+ },
+ {
+  "type": "para",
+  "text": "Each product page shows the price,a description, customer reviews, and a rating for the seller. The seller's overall rating is visible, but detailed information such as how long the seller has been active, or how many of their orders have led to return or complaint,is not easy to find. This matches the seller-verification concerns raised in chapter 1 and 2."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "3. Checkout and Payment Flow"
+ },
+ {
+  "type": "para",
+  "text": "The checkout process is short and clearly laid out, asking for a delivery address, a delivery time preference, and a payment method. Cash on Delivery is offered as a simple default option, alongside mobile financial services and card payment.The final order summary clearly shows the total price, but does not always clearly explain the store's specific return policy for that particular product before the order is confirmed."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "4. Order Tracking and Delivery Status"
+ },
+ {
+  "type": "para",
+  "text": "Once an order is placed,the app shows a step-by-step status, such as \"Order Confirmed\" , \"Packed\" \"Shipped\", and \"Out for Delivery\". This tracking system is generally clear and easy to follow. . However, in line with the delivery complaints discussed in earlier chapters,there is no built-in way for a customer to directly message their assigned rider, or to see proof of a failed delivery attempt if the status suddenly changes to \"delivery attempt failed\"."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "5. Return, Refund, and Customer Support Flow"
+ },
+ {
+  "type": "para",
+  "text": "Starting a return inside the app is simple: a customer selects the order, chooses a reason,and submits the request. After that point, though, the app does not always show a very detailed, step-by-step status for the return, unlike the clear tracking given for a normal delivery. Reaching customer support is done through an in-app chat, which usually starts with an automatic chatbot offering a set of common topics before a customer tries to reach a human agent, or escalates further through the Central Complain Management System mentioned in section 3.2.1."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "6. Notifications and Ongoing Communication"
+ },
+ {
+  "type": "para",
+  "text": "Daraz sends push notifications and SMS messages for major order events, such as order confirmation, shipment, and delivery. These notifications are generally timely for the early stages of an order.However, once an issue comes up, such as a delayed shipment or a return request, the frequency and clarity of follow-up notifications becomes less consistent, leaving the customer to check the app manually rather than being kept updated automatically."
+ },
+ {
+  "type": "para",
+  "text": "Overall, this observation shows that the front-facing, customer-side parts of the Daraz system are generally well designed and easy to use for a normal, problem-free order. The weaker points appear mainly in the areas already flagged in Chapters 1 and 2: seller trust information,delivery-status accuracy, and the depth of tracking and communication available once something goes wrong with an order."
+ },
+ {
+  "type": "para",
+  "text": "A short summary of what each information-gathering tool contributed to this report is given in the table below."
+ },
+ {
+  "type": "table",
+  "rows": [
+   [
+    "Tool",
+    "Main Contribution to This Report"
+   ],
+   [
+    "Review of Literature, Procedure, and Forms",
+    "Gave a general picture of how Daraz's ordering, delivery, and support systems are structured, and how they compare with wider e-commerce industry practices."
+   ],
+   [
+    "On-Site Observation (Platform)",
+    "Showed exactly how the app and website behave in real use, and pinpointed specific screens and steps where the system is weaker."
+   ],
+   [
+    "Interviews (Helpline Call and Public Materials)",
+    "Added a direct, real-world channel of information through Daraz's own customer care line, plus context from the company's published policies"
+   ],
+   [
+    "Questionnaires and Review Analysis",
+    "Turned a large number of individual public reviews into structured, comparable data, shown as the charts in Section 3.3."
+   ]
+  ]
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Table 3.4: Summary of what each information-gathering tool contributed to this chapter."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "3.2.3 Interviews"
+ },
+ {
+  "type": "para",
+  "text": "For this report, the interview process was built around a channel that a student group can genuinely and honestly access: Daraz Bangladesh's own customer care helpline. Reaching senior company management directly was not realistic for this project, so instead of assuming that kind of access, the group placed a real call to Daraz's public customer care line.This section first gives the call details and a guide of the questions asked, with space for the actual notes taken during the call. It then adds supporting information drawn from Daraz's own published customer-service materials, which helps fill in details that a single support call may not fully cover."
+ },
+ {
+  "type": "para",
+  "text": "Before placing the call, the group briefly considered which interview channel was realistic to use. The comparison below explains why the customer care helpline was chosen as the main direct-contact method for this report."
+ },
+ {
+  "type": "table",
+  "rows": [
+   [
+    "Possible Channel",
+    "Possible Channel",
+    "Reason"
+   ],
+   [
+    "Senior management / executives",
+    "Not realistic",
+    "Not normally accessible without prior corporate contacts or a formal media request"
+   ],
+   [
+    "In-person office / warehouse visit",
+    "Not realistic",
+    "Requires prior company approval and is outside the group's access"
+   ],
+   [
+    "Customer care helpline (16492)",
+    "Realistic",
+    "Open to the public, reachable by phone, designed to answer exactly these kinds of questions"
+   ],
+   [
+    "Public reviews and published materials",
+    "Realistic",
+    "Freely available online and reflects real customer and company statements"
+   ]
+  ]
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Table 3.1a: Comparison of possible interview channels and why the helpline was chosen."
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "3.2.3.1 Helpline Interview (Customer Care agent – Ritu Akter)"
+ },
+ {
+  "type": "para",
+  "text": "Daraz Bangladesh's customer care can be reached through the following official channels, as published on the company's own help-center pages:"
+ },
+ {
+  "type": "list",
+  "ordered": false,
+  "items": [
+   "Hotline: 16492 (short code) or +8809610096111",
+   "Hotline hours: Sunday to Thursday, 9:30 AM to 11:00 PM",
+   "Email: customer.care@daraz.com.bd",
+   "In-app Live Chat, available from the Help Center inside the Daraz app"
+  ]
+ },
+ {
+  "type": "table",
+  "rows": [
+   [
+    "#",
+    "Question Asked to the Support Agent",
+    "Findings"
+   ],
+   [
+    "1",
+    "What should a customer do if a delivered product turns out to be fake, damaged, or different from what was ordered?",
+    "There are several options available for reporting regarding these issues. Customer can report from the app or website, also they can report by calling to 16492"
+   ],
+   [
+    "2",
+    "How long does a refund normally take once a return is approved, and how is the customer informed about its progress?",
+    "Once a Daraz return is approved and processed, the refund usually takes 1–10 working days, depending on the payment method. Daraz generally updates customers through SMS/email, and you can also track the status in the Daraz app/website."
+   ],
+   [
+    "3",
+    "What should a customer do if they believe their account was accessed without their permission?",
+    "If you believe your Daraz account was accessed without your permission, please change your password immediately and secure the email/phone number linked to your account. Also check for any unauthorized orders or account changes."
+   ],
+   [
+    "4",
+    "If a delivery is marked as a failed attempt but the customer says they were available, what is the process to dispute or correct this?",
+    "Please share your order number with us. We’ll raise a complaint and have the delivery attempt reviewed. If the order is still eligible for delivery, we’ll assist with the next delivery attempt."
+   ],
+   [
+    "5",
+    "If a chat with customer support does not resolve an issue, what other steps or options are available to the customer?",
+    "If Live Chat doesn’t resolve the issue, the customer can request escalation, follow up using their case number, or contact Daraz Customer Care at 16492 for further assistance."
+   ],
+   [
+    "6",
+    "Roughly how many customer queries does the support team handle in a typical day, especially during sale campaigns?",
+    "There isn’t a fixed daily figure; normal days have a steady volume, while major sale campaigns can bring a significant spike in customer queries."
+   ]
+  ]
+ },
+ {
+  "type": "para",
+  "text": "Table 3.1: Helpline interview guide used to structure the call to Daraz Bangladesh customer care (16492) ."
+ },
+ {
+  "type": "para",
+  "text": "Call log: Date of call — 26/08/2026. Time of call — 01:23 PM. Channel used — Hotline."
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "3.2.3.2 Supporting Information from Daraz's Published Customer-Service Materials"
+ },
+ {
+  "type": "para",
+  "text": "Alongside the direct helpline contact, Daraz Bangladesh's own public help-center pages describe a number of standard policies that are useful context for this report. These are not answers from a live conversation, but they reflect what the company itself has published for customers, and they are presented here in a simple question-and-answer style for easy reading."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Q: What payment methods are available on Daraz?"
+ },
+ {
+  "type": "para",
+  "text": "A: Customers can pay using Cash on Delivery, mobile financial services such as bKash and sNagad or by card and online banking, depending on what is available for a specific order."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Q: How long does delivery usually take?"
+ },
+ {
+  "type": "para",
+  "text": "A: Most products can be returned within a set number of days if they arrive damaged, incorrect, or significantly different from their description, though the exact return window can vary by product category and seller."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Q: What is the Central Complain Management System (CCMS)?"
+ },
+ {
+  "type": "para",
+  "text": "A: It is a separate, more formal complaint channel for issues that were not resolved through the normal chat-based support process, meant to give customers and sellers a structured way to escalate an unresolved problem."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Q: Can a customer track the exact location of their delivery rider in real time?"
+ },
+ {
+  "type": "para",
+  "text": "A: Published help-center information describes step-based delivery status updates, such as \"Shipped\" and \"Out for Delivery\", rather than a live map-based rider location, which is a feature some competing delivery services in Bangladesh already offer."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Q: What happens if a product is out of stock after an order is placed?"
+ },
+ {
+  "type": "para",
+  "text": "A: In such cases, the standard process described by Daraz involves cancelling the affected item and notifying the customer, with any payment already made for that item returned through the normal refund process."
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "3.2.3.3 Seller Interview - Daraz Seller (Arman Rahman)"
+ },
+ {
+  "type": "list",
+  "ordered": false,
+  "items": [
+   "Interviewee: Daraz Seller – Arman Rahman",
+   "Platform: Daraz Bangladesh",
+   "Purpose: To understand the seller's experience with order management, customer disputes, support, and platform policies."
+  ]
+ },
+ {
+  "type": "table",
+  "rows": [
+   [
+    "No",
+    "Question",
+    "Answer / Finding"
+   ],
+   [
+    "1",
+    "How easy was it for you to register and start selling on Daraz?",
+    "The registration process is relatively simple, and a seller can start listing products without a very complicated procedure."
+   ],
+   [
+    "2",
+    "What are the biggest challenges you face while selling on Daraz?",
+    "Competition, pricing pressure, managing orders during campaigns, and handling customer complaints are some of the major challenges."
+   ],
+   [
+    "3",
+    "How do you handle a customer who claims that a product is damaged, incorrect, or different from the description?",
+    "We usually check the order details and product condition and then follow Daraz's return or dispute process."
+   ],
+   [
+    "4",
+    "How satisfied are you with Daraz's support when there is a dispute between a seller and customer?",
+    "Support is available, but complicated disputes can sometimes take time to resolve. Faster communication and clearer decisions would be helpful."
+   ],
+   [
+    "5",
+    "Do Daraz's policies and policy changes reach sellers clearly?",
+    "Important policies are communicated through the seller platform, but during major campaigns there can be a lot of information to follow"
+   ],
+   [
+    "6",
+    "What difficulties do you face during major campaigns such as 11.11?",
+    "Order volume increases significantly, so managing inventory, packing, responding to customers, and meeting deadlines becomes more difficult."
+   ],
+   [
+    "7",
+    "Do you think the seller rating system is fair?",
+    "The rating system is useful, but sellers may feel that some ratings are based on issues outside their direct control, such as delivery problems."
+   ]
+  ]
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Key Finding:"
+ },
+ {
+  "type": "para",
+  "text": "The seller perspective indicates that Daraz provides a relatively accessible selling platform, but sellers face challenges related to competition, campaign-period workload, customer disputes, and communication with platform support. This supports the report's existing finding that seller communication and dispute handling are important areas for improvement."
+ },
+ {
+  "type": "heading",
+  "level": 5,
+  "text": "3.2.3.4 Customer Interview — Daraz Customer (Sifat Bhuyan)"
+ },
+ {
+  "type": "list",
+  "ordered": false,
+  "items": [
+   "Interviewee: Daraz Customer (Sifat Bhuyan)",
+   "Platform: Daraz Bangladesh",
+   "Purpose: To understand the customer's experience from product selection to delivery, return, refund, and support."
+  ]
+ },
+ {
+  "type": "table",
+  "rows": [
+   [
+    "No",
+    "Question",
+    "Answer / Finding"
+   ],
+   [
+    "1",
+    "How often do you use Daraz?",
+    "I use Daraz occasionally or regularly, especially when there are discounts or campaigns."
+   ],
+   [
+    "2",
+    "What is the main reason you choose Daraz instead of buying from a physical store?",
+    "Product variety, convenience,discounts, and the ability to compare different sellers are the main reasons"
+   ],
+   [
+    "3",
+    "Have you ever received a product that was different from what was shown online?",
+    "Yes, there can be situations where the actual product does not completely match the pictures or description"
+   ],
+   [
+    "4",
+    "How satisfied are you with the return and refund process?",
+    "The return request is relatively easy to start, but waiting for the refund or getting clear status updates can sometimes be frustrating."
+   ],
+   [
+    "5",
+    "Have you ever experienced a delivery delay?",
+    "Yes. Delivery is usually completed within the estimated time, but delays can happen, particularly during busy periods."
+   ],
+   [
+    "6",
+    "What would you do if the app showed \"delivery attempt failed\" even though you were available?",
+    "I would contact customer support and ask them to check the delivery status and arrange another delivery attempt."
+   ],
+   [
+    "7",
+    "How would you rate Daraz customer support?",
+    "Support is useful for common problems, but more complicated issues may require additional follow-up."
+   ]
+  ]
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Key Finding"
+ },
+ {
+  "type": "para",
+  "text": "The customer interview highlights that the normal shopping process is convenient, but trust becomes weaker when problems occur. The major concerns are product authenticity, delivery delays, refund visibility, and customer-support resolution, which closely match the problems identified through the report's review analysis. 3.2.3.5 Delivery Partner Interview — Pathao Delivery Agent (Rakib)"
+ },
+ {
+  "type": "para",
+  "text": "Interviewee: Pathao Delivery Agent - Rakib"
+ },
+ {
+  "type": "para",
+  "text": "Role: Delivery Rider"
+ },
+ {
+  "type": "para",
+  "text": "Purpose: To understand the last-mile delivery process and the problems faced by delivery"
+ },
+ {
+  "type": "para",
+  "text": "partners when delivering Daraz orders."
+ },
+ {
+  "type": "table",
+  "rows": [
+   [
+    "No.",
+    "Question",
+    "Answer / Finding"
+   ],
+   [
+    "1",
+    "What are the most common problems you face while delivering e-commerce parcels?",
+    "Incorrect or incomplete addresses, customers not answering calls, traffic, and difficulty finding some locations are common problems."
+   ],
+   [
+    "2",
+    "What happens when you cannot reach the customer?",
+    "We normally try to contact the customer and may make another delivery attempt according to the delivery process."
+   ],
+   [
+    "3",
+    "What information do you receive about the customer and delivery?",
+    "We receive the necessary delivery information, including the customer's address and contact information required to complete the delivery."
+   ],
+   [
+    "4",
+    "How do you record a failed delivery attempt?",
+    "The delivery status is updated according to the reason the parcel could not be delivered, such as the customer being unavailable or the address being difficult to locate."
+   ],
+   [
+    "5",
+    "What happens if a customer says they were available but the delivery was marked as failed?",
+    "The delivery record and communication with the customer may need to be checked to understand what happened and determine whether another attempt is required."
+   ],
+   [
+    "6",
+    "What makes delivery difficult during major online campaigns?",
+    "The number of parcels increases significantly, while traffic and time pressure remain major challenges."
+   ],
+   [
+    "7",
+    "How useful is GPS or location information during delivery?",
+    "Location information is helpful for finding customers, but addresses in some areas may still be difficult to identify accurately."
+   ],
+   [
+    "8",
+    "What improvement would make delivery easier?",
+    "More accurate addresses, better location information, clearer customer instructions, and better communication between the marketplace and delivery partner would help."
+   ]
+  ]
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Key Finding"
+ },
+ {
+  "type": "para",
+  "text": "The delivery-agent perspective shows that last-mile delivery depends heavily on accurate customer information, communication, location data, and coordination between the marketplace and courier . Failed deliveries may therefore result from several factors,not only customer unavailability . This supports the report’s observation that delivery-status accuracy and proof of delivery are areas where the existing system could be improved ."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "3.2.4 Questionnaires"
+ },
+ {
+  "type": "para",
+  "text": "A questionnaire is a structured set of questions used to collect information from a group of people in a consistent way. For this report , three separate questionnaires were designed : one aimed at Daraz customers, one aimed at Daraz sellers, and aimed at general app users. These questionnaires were designed to cover the five problems areas identified in chapter 1 , and to guide the review based content analysis presented later in section 3.3."
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Questionnaire for Customers (Multiple Choice and Yes/No)"
+ },
+ {
+  "type": "list",
+  "ordered": true,
+  "items": [
+   "How often do you order products from Daraz ? (Daily/Weekly/Monthly/Rarely)",
+   "Have you ever received a product that was different from what was shown on the app ? (Yes or No)",
+   "How satisfied are you with the refund process on Daraz ? (Very Satisfied / Satisfied / Neutral / Unsatisfied / Very Unsatisfied)",
+   "Have you ever experienced a delivery delay beyond the estimated date ?(Yes /No)",
+   "Has your Daraz account ever been accessed without your permission ?(Yes/No)",
+   "How would you rate the customer support response time ?(Fast/Average/Slow/Very Slow)",
+   "Which payment method do you use most often? (Cash on Delivery / Mobile Financial Service / Card or Online Banking)"
+  ]
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Questionnaire for Sellers (Ranking Scale, 1 = Lowest, 5 = Highest)"
+ },
+ {
+  "type": "list",
+  "ordered": true,
+  "items": [
+   "Rank your satisfaction with Daraz's seller-support tools. (1 to 5)",
+   "Rank how clearly Daraz communicates policy changes to sellers. (1 to 5)",
+   "Rank how fair you feel the seller-rating system is. (1 to 5)",
+   "Rank your satisfaction with how disputes with buyers are resolved. (1 to 5)",
+   "Rank your overall experience selling on Daraz. (1 to 5)"
+  ]
+ },
+ {
+  "type": "heading",
+  "level": 4,
+  "text": "Questionnaire for App Users (Fill in the Blank and Multiple Choice)"
+ },
+ {
+  "type": "list",
+  "ordered": true,
+  "items": [
+   "I have used the Daraz app for _____ (less than 6 months / 6 months to 1 year / more than 1 year).",
+   "The feature I use most often on the Daraz app is _____.",
+   "My last order from Daraz arrived within _____ days.",
+   "What is your primary reason for using Daraz? (Price / Product variety / Convenience / Promotions and discounts)",
+   "Which device do you primarily use to shop on Daraz? (Mobile App / Website / Both)",
+   "How would you describe the pricing on Daraz compared to physical shops? (Much lower / Slightly lower / About the same / Higher)"
+  ]
+ },
+ {
+  "type": "para",
+  "text": "These questionnaires were used to guide a structured content analysis of the large number of public customer reviews and comments already available for Daraz Bangladesh on platforms such as Trustpilot, SmartCustomer, Google Play Store, and Reviews.io. Rather than collecting brand-new responses, each publicly available review was read and matched against the closest related question above, and grouped into the five problem categories identified in Chapter 1. The results of this content analysis are presented as charts in Section 3.3."
+ }
+]
