@@ -22,12 +22,15 @@ export default function RootLayout({ children }) {
         <Nav />
         <main className="md:pl-72">{children}</main>
         <footer className="border-t border-[var(--color-hair)] bg-[var(--color-ink)]/90">
-          <div className="mx-auto max-w-4xl px-6 md:px-10 py-5 text-center text-[11px] text-[var(--color-paper-dim)]">
+          <div className="mx-auto max-w-4xl px-6 md:px-10 py-4 text-center text-[10px] text-[var(--color-paper-dim)]">
             <div className="font-mono leading-relaxed">
-              © 2026 Group 05, Information System Design and Software Engineering Lab (CSE 346), Section 20, Summer 2026, Southeast University.
+              © 2026 Southeast University • CSE 346 • Summer 2026 • Group 05
             </div>
-            <div className="mt-2 tracking-[0.12em] uppercase text-[9.5px] text-[var(--color-paper-dim)]">
-              System Analysis and Design of Daraz Bangladesh
+            <div className="mt-2 tracking-[0.12em] uppercase text-[8.5px] text-[var(--color-paper-dim)]">
+              Daraz Bangladesh System Analysis & Design
+            </div>
+            <div className="mt-3 font-mono text-[9.5px] text-[var(--color-paper-dim)]">
+              Made with 💓 by <a href="https://mdabdullahalafif.vercel.app/" target="_blank" rel="noreferrer" className="text-[var(--color-signal)] underline underline-offset-2 hover:text-[var(--color-gold)]">Afif</a>
             </div>
           </div>
         </footer>
