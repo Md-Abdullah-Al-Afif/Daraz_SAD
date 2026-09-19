@@ -15,6 +15,16 @@ function slugify(text) {
 }
 
 export function Heading({ node }) {
+  const isCaption = /^(Figure|Table)\s+\d/.test(node.text.trim());
+
+  if (isCaption) {
+    return (
+      <p id={slugify(node.text)} className="font-mono text-[12.5px] text-[var(--color-paper-dim)] border-l-2 border-[var(--color-signal)]/50 pl-3 my-4 leading-relaxed">
+        {node.text}
+      </p>
+    );
+  }
+
   const Tag = `h${Math.min(node.level || 4, 6)}`;
   return (
     <Tag id={slugify(node.text)} className={headingClasses(node.level)}>

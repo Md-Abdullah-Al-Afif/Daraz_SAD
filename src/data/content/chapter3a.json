@@ -320,7 +320,7 @@
  {
   "type": "heading",
   "level": 4,
-  "text": "Table 3.4: Summary of what each information-gathering tool contributed to this chapter."
+  "text": "Table 3.1: Summary of what each information-gathering tool contributed to this chapter."
  },
  {
   "type": "heading",
@@ -368,7 +368,7 @@
  {
   "type": "heading",
   "level": 4,
-  "text": "Table 3.1a: Comparison of possible interview channels and why the helpline was chosen."
+  "text": "Table 3.2: Comparison of possible interview channels and why the helpline was chosen."
  },
  {
   "type": "heading",
@@ -431,7 +431,7 @@
  },
  {
   "type": "para",
-  "text": "Table 3.1: Helpline interview guide used to structure the call to Daraz Bangladesh customer care (16492) ."
+  "text": "Table 3.3: Helpline interview guide used to structure the call to Daraz Bangladesh customer care (16492)."
  },
  {
   "type": "para",
@@ -551,6 +551,10 @@
   ]
  },
  {
+  "type": "para",
+  "text": "Table 3.4: Seller interview"
+ },
+ {
   "type": "heading",
   "level": 4,
   "text": "Key Finding:"
@@ -617,6 +621,10 @@
     "Support is useful for common problems, but more complicated issues may require additional follow-up."
    ]
   ]
+ },
+ {
+  "type": "para",
+  "text": "Table 3.5: Customer interview"
  },
  {
   "type": "heading",
@@ -692,6 +700,10 @@
     "More accurate addresses, better location information, clearer customer instructions, and better communication between the marketplace and delivery partner would help."
    ]
   ]
+ },
+ {
+  "type": "para",
+  "text": "Table 3.6: Delivery Partner Interview"
  },
  {
   "type": "heading",
