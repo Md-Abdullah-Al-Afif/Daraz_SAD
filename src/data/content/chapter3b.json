@@ -116,34 +116,37 @@
    [
     "Technology / Development Cost",
     "Seller verification and rating system",
+    "$10,000"
+   ],
+   [
+    "Technology / Development Cost",
+    "Fraud detection and login-security upgrade",
     "$12,000"
    ],
    [
-    "Fraud detection and login-security upgrade",
-    "$15,000"
-   ],
-   [
+    "Technology / Development Cost",
     "Return and refund status tracking tool",
-    "$6,000"
+    "$5,000"
    ],
    [
+    "Technology / Development Cost",
     "Delivery proof-of-attempt feature",
-    "$4,500"
+    "$3,500"
    ],
    [
     "Personnel Cost",
     "Additional support staff and training",
-    "$9,000"
+    "$7,000"
    ],
    [
     "Operating Cost",
     "Awareness campaigns on fraud and fake pages",
-    "$3,500"
+    "$2,500"
    ],
    [
     "Total Estimated Cost",
     "",
-    "$50,000"
+    "$40,000"
    ]
   ]
  },

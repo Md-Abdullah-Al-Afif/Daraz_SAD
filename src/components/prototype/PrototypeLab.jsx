@@ -219,7 +219,7 @@ function OtpScreen() {
         {msg && <div className="text-xs text-rose-600">{msg}</div>}
         <Btn type="submit" disabled={val.length !== 6}>Verify & continue</Btn>
       </form>
-      <button onClick={() => setState("frozen")} className="w-full rounded-lg border border-rose-300 py-2.5 text-sm font-semibold text-rose-700 hover:bg-rose-50">This wasn't me</button>
+      <button onClick={() => setState("frozen")} className="w-full rounded-lg border border-rose-300 py-2.5 text-sm font-semibold text-rose-700 hover:bg-rose-50">This wasn&apos;t me</button>
     </Frame>
   );
 }

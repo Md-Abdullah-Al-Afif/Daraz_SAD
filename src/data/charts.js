@@ -32,6 +32,44 @@ export const deliveryTimes = [
   { name: "More than 7 days", value: 12 },
 ];
 
+export const improvementCostBreakdown = [
+  {
+    costType: "Technology / Development Cost",
+    item: "Seller verification and rating system",
+    estimatedCost: 10000,
+  },
+  {
+    costType: "Technology / Development Cost",
+    item: "Fraud detection and login-security upgrade",
+    estimatedCost: 12000,
+  },
+  {
+    costType: "Technology / Development Cost",
+    item: "Return and refund status tracking tool",
+    estimatedCost: 5000,
+  },
+  {
+    costType: "Technology / Development Cost",
+    item: "Delivery proof-of-attempt feature",
+    estimatedCost: 3500,
+  },
+  {
+    costType: "Personnel Cost",
+    item: "Additional support staff and training",
+    estimatedCost: 7000,
+  },
+  {
+    costType: "Operating Cost",
+    item: "Awareness campaigns on fraud and fake pages",
+    estimatedCost: 2500,
+  },
+  {
+    costType: "Total Estimated Cost",
+    item: "",
+    estimatedCost: 40000,
+  },
+];
+
 export const breakEven = {
   fixedCost: 40000,
   pricePerUnit: 13,
