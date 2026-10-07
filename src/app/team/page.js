@@ -50,8 +50,7 @@ export default function Team() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-[var(--color-hair)] font-mono text-[11px] text-[var(--color-paper-dim)]">
-          Report title: "System Analysis and Design of Daraz Bangladesh" — Department of
-          Computer Science and Engineering.
+          Report title: "System Analysis and Design of Daraz Bangladesh"
         </div>
       </div>
       <ChapterNav prev={{ href: "/chapter-4-database", label: "Chapter 4 — Database Design & Forms" }} />

@@ -70,7 +70,6 @@ export default function Chapter4Database() {
 
         <Doc nodes={content.slice(FORM_DESIGN_START, SELLER_SECTION_START)} />
         <Doc nodes={content.slice(SELLER_SECTION_START, SELLER_FIGURE_START + 2)} />
-        <ReportImage src="/Seller registration form.png" alt="Seller Verification Form" caption="Seller Verification form" />
         <FormMockup
           title="Seller Verification"
           fields={[
@@ -98,7 +97,6 @@ export default function Chapter4Database() {
         <Doc nodes={content.slice(OTP_FIGURE_START + 2, REFUND_SECTION_START)} />
 
         <Doc nodes={content.slice(REFUND_SECTION_START, REFUND_FIGURE_START + 2)} />
-        <ReportImage src="/Return Feedback.png" alt="Return / Refund Request form" caption="Return / Refund Request form" />
         <FormMockup
           title="Request Return / Refund"
           fields={[

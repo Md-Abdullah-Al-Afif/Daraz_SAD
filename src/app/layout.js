@@ -29,9 +29,6 @@ export default function RootLayout({ children }) {
             <div className="mt-2 tracking-[0.12em] uppercase text-[8.5px] text-[var(--color-paper-dim)]">
               Daraz Bangladesh System Analysis & Design
             </div>
-            <div className="mt-3 font-mono text-[9.5px] text-[var(--color-paper-dim)]">
-              Made with 💓 by <a href="https://mdabdullahalafif.vercel.app/" target="_blank" rel="noreferrer" className="text-[var(--color-signal)] underline underline-offset-2 hover:text-[var(--color-gold)]">Afif</a>
-            </div>
           </div>
         </footer>
       </body>
