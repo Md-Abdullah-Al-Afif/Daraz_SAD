@@ -54,16 +54,16 @@ export default function Chapter3Gathering() {
         <Doc nodes={beforeForms} />
 
         <Doc nodes={orderForm} />
-        <ReportImage src="/order form.png" alt="Order form" caption="Order form" />
+        <ReportImage src="/order-form.png" alt="Order form" caption="Order form" />
 
         <Doc nodes={sellerRegistration} />
-        <ReportImage src="/Seller registration form.png" alt="Seller registration form" caption="Seller registration form" />
+        <ReportImage src="/seller-registration-form.png" alt="Seller registration form" caption="Seller registration form" />
 
         <Doc nodes={returnFeedback} />
-        <ReportImage src="/Return Feedback.png" alt="Return feedback and review form" caption="Return / Refund request form" />
+        <ReportImage src="/return-feedback.png" alt="Return feedback and review form" caption="Return / Refund request form" />
 
         <Doc nodes={customerReview} />
-        <ReportImage src="/Customer feedback and review.jfif" alt="Customer feedback and review form" caption="Customer feedback and review form" />
+        <ReportImage src="/customer-feedback-review.jfif" alt="Customer feedback and review form" caption="Customer feedback and review form" />
 
         <Doc nodes={ccms} />
         <ReportImage src="/CCMS.png" alt="Central Complaint Management System" caption="CCMS" />

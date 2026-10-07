@@ -60,7 +60,7 @@ export default function Chapter4Database() {
       />
       <div className="max-w-4xl mx-auto px-6 md:px-10 pb-10">
         <Doc nodes={content.slice(0, 9)} />
-        <ReportImage src="/er diagram.png" alt="ER diagram" caption="Entity-Relationship diagram" />
+        <ReportImage src="/er-diagram.png" alt="ER diagram" caption="Entity-Relationship diagram" />
 
         <div className="not-prose grid md:grid-cols-2 gap-3 my-6">
           {ENTITY_PAIRS.map(([hIdx, tIdx]) => (
@@ -77,6 +77,9 @@ export default function Chapter4Database() {
             { label: "Owner's Full Name", type: "text", placeholder: "" },
             { label: "National ID Number", type: "text", placeholder: "" },
             { label: "Upload ID Photo", type: "file" },
+            { label: "Trade License", type: "checkbox", placeholder: "I have a trade license (optional)" },
+            { label: "Trade License Number", type: "text", placeholder: "", showWhenChecked: true },
+            { label: "Upload Trade License Photo", type: "file", showWhenChecked: true },
             { label: "Business Category", type: "select", placeholder: "[Select Category]" },
           ]}
           submitLabel="Submit for Verification"
@@ -88,9 +91,21 @@ export default function Chapter4Database() {
         <FormMockup
           title="Verify your identify"
           fields={[
-            { label: "Registered Mobile Number", type: "text", placeholder: "+8881xxxxxx" },
+            {
+              label: "Registered Mobile Number",
+              type: "text",
+              value: "+8881xxxxxx",
+              placeholder: "+8881xxxxxx",
+              readOnly: true,
+            },
             { label: "One-Time Code(OTP)", type: "text", placeholder: "[-----]" },
-            { label: "New Device/Location detected", type: "text", placeholder: "Dhaka,Bangladesh" },
+            {
+              label: "New Device/Location detected",
+              type: "text",
+              value: "Dhaka,Bangladesh",
+              placeholder: "Dhaka,Bangladesh",
+              readOnly: true,
+            },
           ]}
           submitLabel="Verify & Continue"
         />
@@ -100,8 +115,14 @@ export default function Chapter4Database() {
         <FormMockup
           title="Request Return / Refund"
           fields={[
-            { label: "Order ID", type: "text", placeholder: "#BD-2026xxxxxx" },
-            { label: "One-Time Code(OTP)", type: "select", placeholder: "[Select Reason]" },
+            {
+              label: "Order ID",
+              type: "text",
+              value: "#BD-2026xxxxxx",
+              placeholder: "#BD-2026xxxxxx",
+              readOnly: true,
+            },
+            { label: "Reason", type: "select", placeholder: "[Select Reason]" },
             { label: "Upload Photo (If damaged)", type: "file", placeholder: "Upload Photo" },
           ]}
           submitLabel="Submit Return Request"
@@ -113,10 +134,16 @@ export default function Chapter4Database() {
         <FormMockup
           title="Confirm Delivery(Rider App)"
           fields={[
-            { label: "Order ID", type: "text", placeholder: "#BD-2026xxxxxx" },
+            {
+              label: "Order ID",
+              type: "text",
+              value: "#BD-2026xxxxxx",
+              placeholder: "#BD-2026xxxxxx",
+              readOnly: true,
+            },
             { label: "Delivery OTP from Customer", type: "text", placeholder: "[....]" },
             { label: "Photo proof of Handover", type: "file", placeholder: "Capture Photo" },
-            { label: "If customer unavailable", type: "text", placeholder: "Log call attempt + timestamp" },
+            { label: "If customer unavailable", type: "button", placeholder: "Log call attempt + timestamp" },
           ]}
           submitLabel="Confirm Delivery"
         />
@@ -124,7 +151,7 @@ export default function Chapter4Database() {
       </div>
       <ChapterNav
         prev={{ href: "/chapter-4-design", label: "Chapter 4 — Candidate Systems & Design" }}
-        next={{ href: "/team", label: "Group & Course" }}
+        next={{ href: "/prototype", label: "Working Prototype" }}
       />
     </div>
   );

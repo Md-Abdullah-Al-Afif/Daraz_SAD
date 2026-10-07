@@ -13,6 +13,7 @@ const ITEMS = [
   { href: "/chapter-3-analysis", label: "Ch.3 · Analysis & Cost-Benefit" },
   { href: "/chapter-4-design", label: "Ch.4 · Candidate Systems" },
   { href: "/chapter-4-database", label: "Ch.4 · Database & Forms" },
+  { href: "/prototype", label: "Prototype · Proposed System" },
   { href: "/team", label: "Group & Course" },
 ];
 

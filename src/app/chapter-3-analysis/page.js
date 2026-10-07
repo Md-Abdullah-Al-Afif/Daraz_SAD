@@ -50,7 +50,7 @@ export default function Chapter3Analysis() {
         />
 
         <Doc nodes={content.slice(11, 16)} />
-        <ReportImage src="/Figure 3.5.png" alt="Figure 3.5 — DFD of the existing Daraz Bangladesh order and delivery system" caption="Figure 3.5" />
+        <ReportImage src="/figure-3-5.png" alt="Figure 3.5 — DFD of the existing Daraz Bangladesh order and delivery system" caption="Figure 3.5" />
         <DFDDiagram
           title="Figure 3.5 — DFD of the existing Daraz Bangladesh order and delivery system"
           processes={dfdExisting.processes}

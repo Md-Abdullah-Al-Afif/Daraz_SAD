@@ -17,6 +17,7 @@ const CHAPTERS = [
   { href: "/chapter-3-analysis", num: "03b", title: "Analysis, Cost-Benefit & Root Cause", dek: "Charts and graphs, the existing system's DFD, cost-benefit analysis, break-even point, and root-cause analysis." },
   { href: "/chapter-4-design", num: "04a", title: "Candidate Systems & Design", dek: "Two candidate systems compared and scored, the selected system's DFD, and how it solves each problem." },
   { href: "/chapter-4-database", num: "04b", title: "Database Design & Forms", dek: "The Entity-Relationship diagram, full data dictionary, and wireframe designs for four new/modified forms." },
+  { href: "/prototype", num: "05", title: "Working Prototype", dek: "Interactive screens of the proposed system: trust score, OTP and account freeze, return receipt, rider proof, and support SLA." },
 ];
 
 export default function Home() {

@@ -10,6 +10,7 @@ This project is a multi-page Next.js website that presents the complete System A
 - Shared navigation, branding, and footer across the site
 - Reusable styling and structured content rendering for report elements
 - Preserved report tables, charts, DFDs, and interview excerpts
+- /prototype: working front-end prototype of the proposed system (trust score, OTP + account freeze, return receipt and tracker, rider proof lock, support SLA escalation) using fake data, no backend
 
 ## Project structure
 

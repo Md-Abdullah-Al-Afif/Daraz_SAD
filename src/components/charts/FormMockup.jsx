@@ -1,6 +1,10 @@
 "use client";
 
+import { useState } from "react";
+
 export default function FormMockup({ title, fields, submitLabel, caption, secondaryAction = null }) {
+  const [showTradeLicense, setShowTradeLicense] = useState(false);
+
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(`${title} submitted`);
@@ -28,46 +32,79 @@ export default function FormMockup({ title, fields, submitLabel, caption, second
         </h4>
 
         <div className="space-y-3">
-          {fields.map((field, index) => (
-            <label key={`${field.label}-${index}`} className="block text-left">
-              <span className="mb-1.5 block font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--color-paper-dim)]">
-                {field.label}
-              </span>
-
-              {field.type === "select" ? (
-                <div className="relative">
-                  <select
-                    defaultValue=""
-                    className="w-full appearance-none rounded-xl border border-[var(--color-hair)] bg-[var(--color-ink)]/40 px-3 py-2.5 text-[13px] text-[var(--color-paper)] outline-none transition focus:border-[var(--color-signal)] focus:ring-2 focus:ring-[var(--color-signal)]/40"
-                  >
-                    <option value="" disabled>
-                      {field.placeholder}
-                    </option>
-                  </select>
-                  <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[var(--color-paper-dim)]">
-                    ▾
-                  </span>
-                </div>
-              ) : field.type === "file" ? (
-                <div className="rounded-xl border border-[var(--color-hair)] bg-[var(--color-ink)]/40 px-3 py-2.5 text-[13px] text-[var(--color-paper)]">
+          {fields.map((field, index) => {
+            if (field.type === "checkbox") {
+              return (
+                <label key={`${field.label}-${index}`} className="flex items-center gap-2 text-left text-[12px] text-[var(--color-paper)]">
                   <input
-                    type="file"
-                    className="block w-full text-[12px] text-[var(--color-paper)] file:mr-3 file:rounded file:border-0 file:bg-[var(--color-signal)] file:px-2.5 file:py-1.5 file:font-medium file:text-[11px] file:text-[var(--color-ink)] file:shadow-none"
+                    type="checkbox"
+                    checked={showTradeLicense}
+                    onChange={(event) => setShowTradeLicense(event.target.checked)}
+                    className="h-4 w-4 rounded border-[var(--color-hair)] bg-[var(--color-ink)]/40 text-[var(--color-signal)]"
                   />
-                </div>
-              ) : (
-                <input
-                  type={field.type || "text"}
-                  placeholder={field.placeholder || ""}
-                  className="w-full rounded-xl border border-[var(--color-hair)] bg-[var(--color-ink)]/40 px-3 py-2.5 text-[13px] text-[var(--color-paper)] placeholder:text-[var(--color-paper-dim)] outline-none transition focus:border-[var(--color-signal)] focus:ring-2 focus:ring-[var(--color-signal)]/40"
-                />
-              )}
+                  <span>{field.placeholder}</span>
+                </label>
+              );
+            }
 
-              {field.note && (
-                <p className="mt-1.5 text-[10px] leading-relaxed text-[var(--color-paper-dim)]">{field.note}</p>
-              )}
-            </label>
-          ))}
+            if (field.showWhenChecked && !showTradeLicense) {
+              return null;
+            }
+
+            return (
+              <label key={`${field.label}-${index}`} className="block text-left">
+                <span className="mb-1.5 block font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--color-paper-dim)]">
+                  {field.label}
+                </span>
+
+                {field.type === "select" ? (
+                  <div className="relative">
+                    <select
+                      defaultValue=""
+                      className="w-full appearance-none rounded-xl border border-[var(--color-hair)] bg-[var(--color-ink)]/40 px-3 py-2.5 text-[13px] text-[var(--color-paper)] outline-none transition focus:border-[var(--color-signal)] focus:ring-2 focus:ring-[var(--color-signal)]/40"
+                    >
+                      <option value="" disabled>
+                        {field.placeholder}
+                      </option>
+                    </select>
+                    <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[var(--color-paper-dim)]">
+                      ▾
+                    </span>
+                  </div>
+                ) : field.type === "file" ? (
+                  <div className="rounded-xl border border-[var(--color-hair)] bg-[var(--color-ink)]/40 px-3 py-2.5 text-[13px] text-[var(--color-paper)]">
+                    <input
+                      type="file"
+                      className="block w-full text-[12px] text-[var(--color-paper)] file:mr-3 file:rounded file:border-0 file:bg-[var(--color-signal)] file:px-2.5 file:py-1.5 file:font-medium file:text-[11px] file:text-[var(--color-ink)] file:shadow-none"
+                    />
+                  </div>
+                ) : field.type === "button" ? (
+                  <button
+                    type="button"
+                    className="w-full rounded-xl border border-[var(--color-hair)] bg-[var(--color-ink)]/40 px-3 py-2.5 text-center text-[12px] font-medium text-[var(--color-paper)] transition hover:border-[var(--color-signal)] hover:bg-[var(--color-signal)]/5"
+                  >
+                    {field.placeholder}
+                  </button>
+                ) : (
+                  <input
+                    type={field.type || "text"}
+                    value={field.value ?? ""}
+                    readOnly={field.readOnly || false}
+                    disabled={field.disabled || false}
+                    placeholder={field.placeholder || ""}
+                    className={[
+                      "w-full rounded-xl border border-[var(--color-hair)] bg-[var(--color-ink)]/40 px-3 py-2.5 text-[13px] text-[var(--color-paper)] placeholder:text-[var(--color-paper-dim)] outline-none",
+                      field.readOnly || field.disabled ? "select-none pointer-events-none opacity-75" : "transition focus:border-[var(--color-signal)] focus:ring-2 focus:ring-[var(--color-signal)]/40",
+                    ].join(" ")}
+                  />
+                )}
+
+                {field.note && (
+                  <p className="mt-1.5 text-[10px] leading-relaxed text-[var(--color-paper-dim)]">{field.note}</p>
+                )}
+              </label>
+            );
+          })}
         </div>
 
         {secondaryAction && (

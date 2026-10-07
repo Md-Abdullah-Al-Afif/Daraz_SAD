@@ -21,7 +21,7 @@ export default function Chapter4Design() {
         <Doc nodes={content.slice(2, 22)} />
         <WeightedMatrix rows={content[22].rows} />
         <Doc nodes={content.slice(23, 29)} />
-        <ReportImage src="/figure 4.1.png" alt="Figure 4.1 — DFD of the proposed candidate system (Candidate System 1)" caption="Figure 4.1" />
+        <ReportImage src="/figure-4-1.png" alt="Figure 4.1 — DFD of the proposed candidate system (Candidate System 1)" caption="Figure 4.1" />
         <DFDDiagram
           title="Figure 4.1 — DFD of the proposed candidate system (Candidate System 1)"
           processes={dfdProposed.processes}
